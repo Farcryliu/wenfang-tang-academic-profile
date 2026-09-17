@@ -9,45 +9,19 @@ export type Publication = {
   citation: CitationSegment[];
 };
 
-export type FeaturedPublication = {
-  id: string;
-  title: string;
-  subtitle: string;
-  authors: string;
-  year: string;
-  publisher: string;
-  cover: string;
-  coverAlt: string;
-};
-
 const text = (value: string): CitationSegment => ({ text: value });
 const italic = (value: string): CitationSegment => ({ text: value, italic: true });
 const link = (value: string): CitationSegment => ({ text: value, href: value });
 
-export const featuredPublications: FeaturedPublication[] = [
+export const selectedPublications: Publication[] = [
   {
     id: "tang-xia-2026",
-    title: "Proud and Angry",
-    subtitle: "Political Culture in Post-British Hong Kong",
-    authors: "Wenfang Tang and Ying Xia",
-    year: "2026",
-    publisher: "Oxford University Press",
-    cover: "/assets/publications/proud-and-angry.jpg",
-    coverAlt: "Cover of Proud and Angry by Wenfang Tang and Ying Xia",
+    citation: [
+      text("Tang, W., & Xia, Y. (2026). "),
+      italic("Proud and angry: Political culture in post-British Hong Kong"),
+      text(". Oxford University Press."),
+    ],
   },
-  {
-    id: "tang-2016-selected",
-    title: "Populist Authoritarianism",
-    subtitle: "Chinese Political Culture and Regime Sustainability",
-    authors: "Wenfang Tang",
-    year: "2016",
-    publisher: "Oxford University Press",
-    cover: "/assets/publications/populist-authoritarianism.jpg",
-    coverAlt: "Cover of Populist Authoritarianism by Wenfang Tang",
-  },
-];
-
-export const selectedPublications: Publication[] = [
   {
     id: "he-tang-2024",
     citation: [
@@ -73,6 +47,14 @@ export const selectedPublications: Publication[] = [
       italic("Journal of Contemporary China, 32"),
       text("(140), 207\u2013224. "),
       link("https://doi.org/10.1080/10670564.2022.2071883"),
+    ],
+  },
+  {
+    id: "tang-2016-selected",
+    citation: [
+      text("Tang, W. (2016). "),
+      italic("Populist authoritarianism: Chinese political culture and regime sustainability"),
+      text(". Oxford University Press."),
     ],
   },
 ];
