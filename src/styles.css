@@ -436,7 +436,7 @@ summary {
 
 .publication-preview-card__body img {
   width: 100%;
-  height: min(36vh, 280px);
+  height: auto;
   object-fit: contain;
   object-position: top center;
 }
@@ -1315,7 +1315,7 @@ summary {
   }
 
   .publication-preview-card__body img {
-    height: 250px;
+    height: auto;
   }
 
   .publication-preview-card__abstract > p:last-child {
