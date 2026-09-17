@@ -1,3 +1,9 @@
 .sites-runtime/
 .DS_Store
 *.pdf
+*.rtf
+*.command
+node_modules/
+.vite/
+dist/
+npm-debug.log*
