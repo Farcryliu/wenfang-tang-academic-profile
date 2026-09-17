@@ -23,9 +23,9 @@ export function PublicationPreviewCard({ publication }: { publication: Publicati
         <figure>
           <img src={`${import.meta.env.BASE_URL}${preview.image}`} alt={preview.imageAlt} />
         </figure>
-        <div className="publication-preview-card__introduction">
-          <p className="publication-preview-card__label">Introduction</p>
-          <p>{preview.introduction}</p>
+        <div className="publication-preview-card__abstract">
+          <p className="publication-preview-card__label">Abstract</p>
+          <p>{preview.abstract}</p>
         </div>
       </div>
     </article>
