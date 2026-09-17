@@ -345,7 +345,6 @@ summary {
   position: relative;
   min-height: 100vh;
   padding: 10vh 0 13vh;
-  border-bottom: 1px solid var(--line);
   opacity: 0.18;
   transform: translateY(36px);
   transition: opacity 700ms ease, transform 700ms ease;
@@ -596,7 +595,6 @@ summary {
 
 .publication-archive {
   margin-top: 46px;
-  border-top: 1px solid var(--ink);
 }
 
 .archive-heading {
@@ -744,8 +742,7 @@ summary {
 
 .experience-subsection {
   margin-top: 64px;
-  padding-top: 30px;
-  border-top: 1px solid var(--ink);
+  padding-top: 8px;
 }
 
 .experience-subsection > h3 {
@@ -768,11 +765,10 @@ summary {
   grid-template-columns: 190px 1fr;
   gap: 24px;
   padding: 20px 0;
-  border-top: 1px solid var(--line);
 }
 
-.leadership-list li:last-child {
-  border-bottom: 1px solid var(--line);
+.leadership-list li + li {
+  margin-top: 6px;
 }
 
 .leadership-role {
@@ -850,19 +846,13 @@ summary {
 .footer-inner {
   width: min(1440px, 100%);
   margin: 0 auto;
-  padding: clamp(64px, 9vw, 118px) clamp(24px, 5vw, 84px) 30px;
+  padding: clamp(58px, 7vw, 92px) clamp(24px, 5vw, 84px) 30px;
 }
 
 .footer-intro {
-  display: grid;
-  grid-template-columns: minmax(180px, 0.7fr) minmax(0, 1.3fr);
-  gap: clamp(30px, 6vw, 96px);
-  align-items: end;
-  padding-bottom: clamp(38px, 6vw, 68px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  padding-bottom: clamp(26px, 4vw, 46px);
 }
 
-.footer-intro > p,
 .footer-contact-item > p {
   margin: 0;
   color: #90bde7;
@@ -875,25 +865,17 @@ summary {
 .footer-intro h2 {
   margin: 0;
   font-family: var(--serif);
-  font-size: clamp(2rem, 4.2vw, 4rem);
+  font-size: clamp(2.25rem, 3.4vw, 3.2rem);
   font-weight: 400;
-  letter-spacing: -0.035em;
-  line-height: 1.05;
-}
-
-.footer-intro h2 span {
-  display: block;
-  margin-top: 8px;
-  color: #c4cfdb;
-  font-size: 0.5em;
-  letter-spacing: 0.04em;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
 }
 
 .footer-contact-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(30px, 6vw, 96px);
-  padding: clamp(38px, 6vw, 68px) 0;
+  padding: 0 0 clamp(48px, 6vw, 70px);
 }
 
 .footer-contact-item > p span {
@@ -948,8 +930,7 @@ summary {
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding-top: 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: 0;
   color: #93a2b4;
   font-size: 0.7rem;
   letter-spacing: 0.09em;
@@ -1157,7 +1138,6 @@ summary {
     gap: 6px;
   }
 
-  .footer-intro,
   .footer-contact-grid {
     grid-template-columns: 1fr;
     gap: 30px;

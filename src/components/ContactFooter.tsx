@@ -6,11 +6,7 @@ export function ContactFooter() {
     <footer id="contact" className="site-footer">
       <div className="footer-inner">
         <div className="footer-intro">
-          <p>Contact</p>
-          <h2>
-            {profile.name}
-            <span>{profile.nameChinese}</span>
-          </h2>
+          <h2>Contact</h2>
         </div>
 
         <div className="footer-contact-grid">
