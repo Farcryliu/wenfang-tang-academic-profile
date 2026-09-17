@@ -32,7 +32,7 @@ export const featuredPublications: FeaturedPublication[] = [
     authors: "Wenfang Tang and Ying Xia",
     year: "2026",
     publisher: "Oxford University Press",
-    cover: `${import.meta.env.BASE_URL}assets/publications/proud-and-angry.jpg`,
+    cover: "/assets/publications/proud-and-angry.jpg",
     coverAlt: "Cover of Proud and Angry by Wenfang Tang and Ying Xia",
   },
   {
@@ -42,7 +42,7 @@ export const featuredPublications: FeaturedPublication[] = [
     authors: "Wenfang Tang",
     year: "2016",
     publisher: "Oxford University Press",
-    cover: `${import.meta.env.BASE_URL}assets/publications/populist-authoritarianism.jpg`,
+    cover: "/assets/publications/populist-authoritarianism.jpg",
     coverAlt: "Cover of Populist Authoritarianism by Wenfang Tang",
   },
 ];
