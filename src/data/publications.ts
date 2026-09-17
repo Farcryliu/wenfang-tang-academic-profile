@@ -50,12 +50,11 @@ export const selectedPublications: Publication[] = [
     ],
   },
   {
-    id: "tang-hung-ho-2022",
+    id: "tang-2016-selected",
     citation: [
-      text("Tang, W., Hung, J. S. Y., & Ho, B. Y. Y. (2022). Indigenization of political identity in postcolonial Hong Kong. "),
-      italic("Frontiers in Political Science, 4"),
-      text(", Article 837992. "),
-      link("https://doi.org/10.3389/fpos.2022.837992"),
+      text("Tang, W. (2016). "),
+      italic("Populist authoritarianism: Chinese political culture and regime sustainability"),
+      text(". Oxford University Press."),
     ],
   },
 ];
