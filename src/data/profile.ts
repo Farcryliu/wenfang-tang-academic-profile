@@ -15,6 +15,7 @@ export const profile = {
     "Dean, School of Humanities and Social Science",
   ],
   email: "tangwenfang@cuhk.edu.cn",
+  officeAddress: [] as string[],
   universityProfile: "https://myweb.cuhk.edu.cn/tangwenfang/Home/Index",
   biography: [
     [
@@ -64,7 +65,7 @@ export const profile = {
       { text: " and " },
       { text: "Advances in Political Psychology", emphasis: true },
       {
-        text: ", and as an Executive Committee member of RC17 \u2013 Comparative Public Opinion, International Political Science Association (2016\u20132025).",
+        text: ", and as an Executive Committee member of Research Committee 17 (RC17) on Comparative Public Opinion, International Political Science Association (IPSA) (2016\u20132025).",
       },
     ],
   ] satisfies BiographySegment[][],

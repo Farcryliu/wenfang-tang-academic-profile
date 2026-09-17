@@ -1,13 +1,12 @@
 import { useEffect, useRef, useState } from "react";
+import { ContactFooter } from "./components/ContactFooter";
 import { Header } from "./components/Header";
 import { ProfileSidebar } from "./components/ProfileSidebar";
 import { AboutSection } from "./components/sections/AboutSection";
-import { ContactSection } from "./components/sections/ContactSection";
 import { ExperienceSection } from "./components/sections/ExperienceSection";
 import { PublicationsSection } from "./components/sections/PublicationsSection";
-import { profile } from "./data/profile";
 
-const sectionIds = ["about", "publications", "experience", "contact"] as const;
+const sectionIds = ["about", "publications", "experience"] as const;
 
 function App() {
   const [activeSection, setActiveSection] = useState<string>("about");
@@ -79,16 +78,10 @@ function App() {
         <div className="story-column">
           <PublicationsSection visible={isVisible("publications")} />
           <ExperienceSection visible={isVisible("experience")} />
-          <ContactSection visible={isVisible("contact")} />
         </div>
       </main>
 
-      <footer>
-        <span>
-          {profile.name} · {profile.nameChinese}
-        </span>
-        <span>Demo profile · 2026</span>
-      </footer>
+      <ContactFooter />
     </>
   );
 }

@@ -9,7 +9,6 @@ const navigation = [
   ["about", "About"],
   ["publications", "Publications"],
   ["experience", "Experience"],
-  ["contact", "Contact"],
 ] as const;
 
 export function Header({ activeSection, menuOpen, onToggleMenu, onNavigate }: HeaderProps) {

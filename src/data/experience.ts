@@ -79,6 +79,6 @@ export const editorialRoles: LeadershipRole[] = [
     role: "2016—2025",
     title: "Executive Committee Member",
     organization:
-      "RC17 — Comparative Public Opinion, International Political Science Association",
+      "Research Committee 17 (RC17) on Comparative Public Opinion, International Political Science Association (IPSA)",
   },
 ];
