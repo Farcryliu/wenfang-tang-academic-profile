@@ -1,7 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { ContactFooter } from "./components/ContactFooter";
 import { Header } from "./components/Header";
+import { PublicationPreviewCard } from "./components/PublicationPreviewCard";
 import { ProfileSidebar } from "./components/ProfileSidebar";
+import { selectedPublications, type Publication } from "./data/publications";
 import { AboutSection } from "./components/sections/AboutSection";
 import { ExperienceSection } from "./components/sections/ExperienceSection";
 import { PublicationsSection } from "./components/sections/PublicationsSection";
@@ -12,6 +14,7 @@ function App() {
   const [activeSection, setActiveSection] = useState<string>("about");
   const [visibleSections, setVisibleSections] = useState<Set<string>>(() => new Set(["about"]));
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activePublication, setActivePublication] = useState<Publication | null>(null);
   const progressRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -38,6 +41,31 @@ function App() {
       if (section) observer.observe(section);
     });
 
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (activeSection !== "publications") setActivePublication(null);
+  }, [activeSection]);
+
+  useEffect(() => {
+    selectedPublications.forEach(({ preview }) => {
+      if (!preview) return;
+      const image = new Image();
+      image.src = `${import.meta.env.BASE_URL}${preview.image}`;
+    });
+
+    const publicationsSection = document.getElementById("publications");
+    if (!publicationsSection) return undefined;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) setActivePublication(null);
+      },
+      { threshold: 0.01 },
+    );
+
+    observer.observe(publicationsSection);
     return () => observer.disconnect();
   }, []);
 
@@ -75,8 +103,19 @@ function App() {
           <ProfileSidebar />
           <AboutSection visible={isVisible("about")} />
         </div>
+        <aside className="publication-preview-column" aria-label="Selected publication details">
+          <div className="publication-preview-sticky">
+            {activePublication ? (
+              <PublicationPreviewCard key={activePublication.id} publication={activePublication} />
+            ) : null}
+          </div>
+        </aside>
         <div className="story-column">
-          <PublicationsSection visible={isVisible("publications")} />
+          <PublicationsSection
+            visible={isVisible("publications")}
+            activePublication={activePublication}
+            onPreview={setActivePublication}
+          />
           <ExperienceSection visible={isVisible("experience")} />
         </div>
       </main>

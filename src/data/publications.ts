@@ -7,6 +7,14 @@ export type CitationSegment = {
 export type Publication = {
   id: string;
   citation: CitationSegment[];
+  preview?: {
+    type: "Book" | "Article";
+    title: string;
+    href: string;
+    image: string;
+    imageAlt: string;
+    introduction: string;
+  };
 };
 
 const text = (value: string): CitationSegment => ({ text: value });
@@ -21,6 +29,15 @@ export const selectedPublications: Publication[] = [
       italic("Proud and angry: Political culture in post-British Hong Kong"),
       text(". Oxford University Press."),
     ],
+    preview: {
+      type: "Book",
+      title: "Proud and Angry: Political Culture in Post-British Hong Kong",
+      href: "https://doi.org/10.1093/9780197831588.001.0001",
+      image: "assets/publications/proud-and-angry-cover.jpg",
+      imageAlt: "Cover of Proud and Angry",
+      introduction:
+        "Why did two million Hongkongers take to the streets in 2019? Drawing on a territory-wide public opinion survey and embedded survey experiments, the book examines a distinctive postcolonial political culture shaped by contested identity, resistance to political integration, and persistent popular mobilization.",
+    },
   },
   {
     id: "he-tang-2024",
@@ -30,6 +47,15 @@ export const selectedPublications: Publication[] = [
       text(", 1\u201323. "),
       link("https://doi.org/10.1080/10670564.2024.2339303"),
     ],
+    preview: {
+      type: "Article",
+      title: "Constructed Community: Rise and Engines of Chinese Nationalism under Xi Jinping",
+      href: "https://doi.org/10.1080/10670564.2024.2339303",
+      image: "assets/publications/constructed-community-page.jpg",
+      imageAlt: "First page of Constructed Community",
+      introduction:
+        "Using World Values Survey data, this study documents a marked rise in Chinese mass nationalism between 2012/13 and 2018. It argues that elite construction is the strongest explanation for this increase and considers how sustained state nationalism may continue to shape public attitudes.",
+    },
   },
   {
     id: "tang-zhang-2023",
@@ -39,6 +65,15 @@ export const selectedPublications: Publication[] = [
       text("(4), 563\u2013584. "),
       link("https://doi.org/10.1111/aspp.12721"),
     ],
+    preview: {
+      type: "Article",
+      title: "Revolution Derailed: The Struggle for Internet Control and Media Freedom in China",
+      href: "https://doi.org/10.1111/aspp.12721",
+      image: "assets/publications/revolution-derailed-page.jpg",
+      imageAlt: "First page of Revolution Derailed",
+      introduction:
+        "Based on the 2018 China Internet Survey, the article compares social media with officially controlled television as sources of political information. It finds that internet use encourages questioning and liberal ideas but does not necessarily produce bottom-up participation, while television remains effective in building regime support and mobilizing participation.",
+    },
   },
   {
     id: "tang-hu-2023",
@@ -48,6 +83,15 @@ export const selectedPublications: Publication[] = [
       text("(140), 207\u2013224. "),
       link("https://doi.org/10.1080/10670564.2022.2071883"),
     ],
+    preview: {
+      type: "Article",
+      title: "Detecting Grassroots Bribery and Its Sources in China: A Survey Experimental Approach",
+      href: "https://doi.org/10.1080/10670564.2022.2071883",
+      image: "assets/publications/detecting-bribery-page.jpg",
+      imageAlt: "First page of Detecting Grassroots Bribery and Its Sources in China",
+      introduction:
+        "This national survey uses embedded list experiments and an innovative weighting method to estimate bribery that respondents may be reluctant to report. It finds substantially more grassroots bribery in public services than direct responses suggest and traces it to service distribution, low perceived risk, and rising disposable income.",
+    },
   },
   {
     id: "tang-2016-selected",
@@ -56,6 +100,15 @@ export const selectedPublications: Publication[] = [
       italic("Populist authoritarianism: Chinese political culture and regime sustainability"),
       text(". Oxford University Press."),
     ],
+    preview: {
+      type: "Book",
+      title: "Populist Authoritarianism: Chinese Political Culture and Regime Sustainability",
+      href: "https://doi.org/10.1093/acprof:oso/9780190205782.001.0001",
+      image: "assets/publications/populist-authoritarianism-cover.jpg",
+      imageAlt: "Cover of Populist Authoritarianism",
+      introduction:
+        "The book explains how growing protest can coexist with strong public support for China’s single-party state. Drawing on public opinion surveys from 1987 to 2014, it develops a framework of populist authoritarianism centered on political activism, a highly responsive government, weak institutions, and high political trust.",
+    },
   },
 ];
 
