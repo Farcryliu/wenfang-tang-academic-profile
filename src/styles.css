@@ -5,6 +5,7 @@
   --white: #ffffff;
   --blue: #2d72b8;
   --blue-pale: #e8f1fa;
+  --section-divider: rgba(45, 114, 184, 0.42);
   --gold: #b59358;
   --line: #dbe1e8;
   --serif: Georgia, "Times New Roman", "Noto Serif SC", serif;
@@ -353,6 +354,11 @@ summary {
 .story-section.is-visible {
   opacity: 1;
   transform: none;
+}
+
+#publications,
+#experience {
+  border-top: 1px solid var(--section-divider);
 }
 
 .section-number {
@@ -742,7 +748,8 @@ summary {
 
 .experience-subsection {
   margin-top: 64px;
-  padding-top: 8px;
+  padding-top: 30px;
+  border-top: 1px solid var(--section-divider);
 }
 
 .experience-subsection > h3 {
