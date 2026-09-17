@@ -1,10 +1,35 @@
 import {
   articlesAndChapters,
   booksAndEditedVolumes,
+  featuredPublications,
   selectedPublications,
+  type FeaturedPublication,
   type Publication,
 } from "../../data/publications";
 import { SectionShell } from "../SectionShell";
+
+function FeaturedPublicationCard({ publication }: { publication: FeaturedPublication }) {
+  return (
+    <article className="featured-publication-card">
+      <figure className="featured-publication-cover">
+        <img src={publication.cover} alt={publication.coverAlt} loading="lazy" />
+      </figure>
+
+      <div className="featured-publication-copy">
+        <div className="featured-publication-meta">
+          <span>Book</span>
+          <time dateTime={publication.year}>{publication.year}</time>
+        </div>
+        <h3>{publication.title}</h3>
+        <p className="featured-publication-subtitle">{publication.subtitle}</p>
+        <div className="featured-publication-details">
+          <p>{publication.authors}</p>
+          <p>{publication.publisher}</p>
+        </div>
+      </div>
+    </article>
+  );
+}
 
 function CitationEntry({ publication }: { publication: Publication }) {
   return (
@@ -65,7 +90,16 @@ export function PublicationsSection({ visible }: { visible: boolean }) {
       title="Selected Publications"
       visible={visible}
     >
-      <CitationList publications={selectedPublications} />
+      <div className="featured-publications" aria-label="Featured books">
+        {featuredPublications.map((publication) => (
+          <FeaturedPublicationCard key={publication.id} publication={publication} />
+        ))}
+      </div>
+
+      <div className="selected-articles">
+        <p className="archive-heading">Selected articles</p>
+        <CitationList publications={selectedPublications} />
+      </div>
 
       <div className="publication-archive">
         <p className="archive-heading">Complete publication list</p>
