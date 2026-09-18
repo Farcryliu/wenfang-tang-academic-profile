@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   articlesAndChapters,
   booksAndEditedVolumes,
@@ -50,6 +51,17 @@ function CitationEntry({
 
         return <span key={index}>{content}</span>;
       })}
+
+      {active && publication.preview ? (
+        <div
+          id={`publication-preview-${publication.id}`}
+          className="publication-preview-mobile"
+          onClick={(event) => event.stopPropagation()}
+          onKeyDown={(event) => event.stopPropagation()}
+        >
+          <PublicationPreviewCard key={publication.id} publication={publication} />
+        </div>
+      ) : null}
     </li>
   );
 }
@@ -106,6 +118,17 @@ export function PublicationsSection({
   activePublication: Publication | null;
   onPreview: (publication: Publication) => void;
 }) {
+  useEffect(() => {
+    if (!activePublication || !window.matchMedia("(max-width: 980px)").matches) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      const preview = document.getElementById(`publication-preview-${activePublication.id}`);
+      preview?.scrollIntoView({ behavior: "auto", block: "start" });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [activePublication]);
+
   return (
     <SectionShell
       id="publications"
@@ -119,12 +142,6 @@ export function PublicationsSection({
         activePublication={activePublication}
         onPreview={onPreview}
       />
-
-      {activePublication ? (
-        <div className="publication-preview-mobile">
-          <PublicationPreviewCard key={activePublication.id} publication={activePublication} />
-        </div>
-      ) : null}
 
       <div className="publication-archive">
         <p className="archive-heading">Complete publication list</p>

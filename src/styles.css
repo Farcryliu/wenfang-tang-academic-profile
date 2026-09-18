@@ -1156,7 +1156,16 @@ summary {
 
   .publication-preview-mobile {
     display: block;
-    margin-top: 28px;
+    width: calc(100% + 1.6rem);
+    margin: 20px 0 10px -1.6rem;
+    text-indent: 0;
+    scroll-margin-top: calc(var(--header-h) + 18px);
+    cursor: default;
+  }
+
+  .citation-entry.has-preview::before {
+    bottom: auto;
+    height: 42px;
   }
 
   .publication-preview-mobile .publication-preview-card {
