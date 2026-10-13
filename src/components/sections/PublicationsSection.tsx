@@ -116,7 +116,7 @@ export function PublicationsSection({
         <p className="archive-heading">Complete publication list</p>
         <nav className="archive-category-links" aria-label="Complete publication lists">
           {archiveCategories.map((category) => <a key={category.id} href={archiveHref(category.id)}>
-            <span>Full {category.label}</span>
+            <span>{category.label}</span>
             <span className="archive-category-count">{category.entries.length} entries <ArrowUpRightIcon /></span>
           </a>)}
         </nav>

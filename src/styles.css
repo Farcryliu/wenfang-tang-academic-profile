@@ -1411,7 +1411,7 @@ summary {
   display: flex; align-items: center; gap: 14px; flex: none;
   color: var(--ink-soft); font-family: var(--sans); font-size: 0.75rem;
 }
-.archive-category-count svg, .archive-resource-links svg, .archive-source svg {
+.archive-category-count svg, .archive-resource-links svg {
   width: 16px; fill: none; stroke: currentColor; stroke-width: 1.4;
 }
 .nav-publications { position: relative; }
@@ -1450,16 +1450,12 @@ summary {
 .archive-sidebar nav a > span:last-child { color: var(--ink-soft); font-family: var(--sans); font-size: 0.7rem; }
 .archive-sidebar nav a:hover, .archive-sidebar nav a[aria-current="page"] { color: var(--blue); }
 .archive-sidebar nav a[aria-current="page"] { border-bottom-color: var(--blue); }
-.archive-source { margin-top: 32px; color: var(--ink-soft); font-size: 0.75rem; line-height: 1.7; }
-.archive-source a { color: var(--blue); }
-.archive-source svg { display: inline-block; width: 12px; margin-left: 3px; vertical-align: middle; }
 .archive-content { min-width: 0; }
 .archive-page-heading { position: relative; padding-bottom: 34px; border-bottom: 1px solid var(--section-divider); }
 .archive-page-heading h1 {
-  margin: 12px 0 18px; font-family: var(--serif); font-size: clamp(2.5rem, 4.2vw, 3.6rem);
+  margin: 12px 0 0; font-family: var(--serif); font-size: clamp(2.5rem, 4.2vw, 3.6rem);
   font-weight: 400; line-height: 1.12; letter-spacing: -0.035em;
 }
-.archive-page-heading > p:not(.section-kicker) { max-width: 540px; margin: 0; color: var(--ink-soft); font-size: 0.9rem; }
 .archive-total { display: inline-block; margin-top: 18px; color: var(--blue); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .archive-book-list { margin: 0; padding: 0; list-style: none; }
 .archive-book-entry {
@@ -1507,7 +1503,7 @@ summary {
   .nav-publications-menu { position: static; width: 100%; margin-bottom: 8px; padding: 0 18px; border: 0; border-left: 1px solid var(--line); box-shadow: none; }
   .archive-page { display: block; padding-top: calc(var(--header-h) + 30px); }
   .archive-sidebar { position: static; margin-bottom: 44px; }
-  .archive-sidebar > .section-kicker, .archive-source { display: none; }
+  .archive-sidebar > .section-kicker { display: none; }
   .archive-sidebar nav { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 22px; border-top: 0; }
   .archive-sidebar nav a { flex: 1; min-width: 130px; padding: 12px 0; font-size: 1rem; }
 }

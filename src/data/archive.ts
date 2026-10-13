@@ -23,10 +23,10 @@ export const fullEditedVolumes: BookEntry[] = data.editedVolumes;
 export const fullArticles: ArchiveEntry[] = data.articles;
 export const fullBlogs: ArchiveEntry[] = data.blogs;
 export const archiveCategories = [
-  { id: "books", label: "Books", entries: fullBooks, description: "Books and monographs, including Chinese and Russian editions." },
-  { id: "edited-volumes", label: "Edited Volumes", entries: fullEditedVolumes, description: "Edited books, collected essays, and a journal issue." },
-  { id: "articles", label: "Articles", entries: fullArticles, description: "Journal articles, book chapters, research reports, and working papers." },
-  { id: "blogs", label: "Blogs", entries: fullBlogs, description: "Commentary, essays, book reviews, interviews, and video presentations." },
+  { id: "books", label: "Books", entries: fullBooks },
+  { id: "edited-volumes", label: "Edited Volumes", entries: fullEditedVolumes },
+  { id: "articles", label: "Articles", entries: fullArticles },
+  { id: "blogs", label: "Blogs", entries: fullBlogs },
 ] as const;
 export function archiveHref(category: ArchiveCategory) {
   return `${import.meta.env.BASE_URL}${category}.html`;

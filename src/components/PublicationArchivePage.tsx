@@ -64,13 +64,11 @@ export function PublicationArchivePage({ category }: { category: ArchiveCategory
           <span>{item.label}</span><span>{String(item.entries.length).padStart(2, "0")}</span>
         </a>)}
       </nav>
-      <p className="archive-source">Complete listings from <a href={`https://www.tangwenfang.org/${category === "blogs" ? "blog" : category}.html`} target="_blank" rel="noreferrer">the original website<ArrowUpRightIcon /></a>.</p>
     </aside>
     <div className="archive-content">
       <header className="archive-page-heading">
         <p className="section-kicker">Complete publication list</p>
         <h1>{current.label}</h1>
-        <p>{current.description}</p>
         <span className="archive-total">{current.entries.length} entries</span>
       </header>
       {category === "books" ? <BookList books={fullBooks} />
