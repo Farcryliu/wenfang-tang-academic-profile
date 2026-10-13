@@ -13,10 +13,12 @@ function CitationEntry({
   publication,
   active,
   onPreview,
+  onPreviewLeave,
 }: {
   publication: Publication;
   active?: boolean;
   onPreview?: (publication: Publication) => void;
+  onPreviewLeave?: () => void;
 }) {
   const canPreview = Boolean(publication.preview && onPreview);
 
@@ -24,13 +26,21 @@ function CitationEntry({
     <li
       className={`citation-entry${canPreview ? " has-preview" : ""}${active ? " is-active" : ""}`}
       tabIndex={canPreview ? 0 : undefined}
-      onMouseEnter={canPreview ? () => onPreview?.(publication) : undefined}
+      onPointerEnter={canPreview ? (event) => {
+        if (event.pointerType === "mouse") onPreview?.(publication);
+      } : undefined}
+      onPointerLeave={canPreview ? (event) => {
+        if (event.pointerType === "mouse") onPreviewLeave?.();
+      } : undefined}
       onFocus={canPreview ? () => onPreview?.(publication) : undefined}
+      onBlur={canPreview ? (event) => {
+        if (!event.currentTarget.contains(event.relatedTarget as Node)) onPreviewLeave?.();
+      } : undefined}
       onClick={canPreview ? () => onPreview?.(publication) : undefined}
       onKeyDown={
         canPreview
           ? (event) => {
-              if (event.key === "Enter" || event.key === " ") {
+              if (event.target === event.currentTarget && (event.key === "Enter" || event.key === " ")) {
                 event.preventDefault();
                 onPreview?.(publication);
               }
@@ -59,10 +69,12 @@ function CitationList({
   publications,
   activePublication,
   onPreview,
+  onPreviewLeave,
 }: {
   publications: Publication[];
   activePublication?: Publication | null;
   onPreview?: (publication: Publication) => void;
+  onPreviewLeave?: () => void;
 }) {
   return (
     <ol className="citation-list">
@@ -72,6 +84,7 @@ function CitationList({
           publication={publication}
           active={publication.id === activePublication?.id}
           onPreview={onPreview}
+          onPreviewLeave={onPreviewLeave}
         />
       ))}
     </ol>
@@ -82,10 +95,12 @@ export function PublicationsSection({
   visible,
   activePublication,
   onPreview,
+  onPreviewLeave,
 }: {
   visible: boolean;
   activePublication: Publication | null;
   onPreview: (publication: Publication) => void;
+  onPreviewLeave: () => void;
 }) {
   useEffect(() => {
     if (!activePublication || !window.matchMedia("(max-width: 980px)").matches) return;
@@ -110,6 +125,7 @@ export function PublicationsSection({
         publications={selectedPublications}
         activePublication={activePublication}
         onPreview={onPreview}
+        onPreviewLeave={onPreviewLeave}
       />
 
       <div className="publication-archive">

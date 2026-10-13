@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ContactFooter } from "./components/ContactFooter";
 import { Header } from "./components/Header";
 import { PublicationPreviewCard } from "./components/PublicationPreviewCard";
@@ -19,6 +19,35 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activePublication, setActivePublication] = useState<Publication | null>(null);
   const progressRef = useRef<HTMLSpanElement>(null);
+  const previewDismissTimer = useRef<number | null>(null);
+
+  const cancelPreviewDismiss = useCallback(() => {
+    if (previewDismissTimer.current !== null) {
+      window.clearTimeout(previewDismissTimer.current);
+      previewDismissTimer.current = null;
+    }
+  }, []);
+
+  const showPublication = useCallback((publication: Publication) => {
+    cancelPreviewDismiss();
+    setActivePublication(publication);
+  }, [cancelPreviewDismiss]);
+
+  const schedulePreviewDismiss = useCallback(() => {
+    // Inline previews on small/touch screens remain open after a tap.
+    if (!window.matchMedia("(min-width: 981px) and (hover: hover)").matches) return;
+    cancelPreviewDismiss();
+    // Allow the pointer to cross the small gap from a citation to its card.
+    previewDismissTimer.current = window.setTimeout(() => {
+      previewDismissTimer.current = null;
+      const hoveredPreview = document.querySelector(
+        ".citation-entry.has-preview:hover, .publication-preview-column .publication-preview-card:hover",
+      );
+      if (!hoveredPreview) setActivePublication(null);
+    }, 180);
+  }, [cancelPreviewDismiss]);
+
+  useEffect(() => cancelPreviewDismiss, [cancelPreviewDismiss]);
 
   useEffect(() => {
     document.title = category
@@ -118,7 +147,20 @@ function App() {
         <aside className="publication-preview-column" aria-label="Selected publication details">
           <div className="publication-preview-sticky">
             {activePublication ? (
-              <PublicationPreviewCard key={activePublication.id} publication={activePublication} />
+              <div
+                onPointerEnter={(event) => {
+                  if (event.pointerType === "mouse") cancelPreviewDismiss();
+                }}
+                onPointerLeave={(event) => {
+                  if (event.pointerType === "mouse") schedulePreviewDismiss();
+                }}
+                onFocus={cancelPreviewDismiss}
+                onBlur={(event) => {
+                  if (!event.currentTarget.contains(event.relatedTarget as Node)) schedulePreviewDismiss();
+                }}
+              >
+                <PublicationPreviewCard key={activePublication.id} publication={activePublication} />
+              </div>
             ) : null}
           </div>
         </aside>
@@ -126,7 +168,8 @@ function App() {
           <PublicationsSection
             visible={isVisible("publications")}
             activePublication={activePublication}
-            onPreview={setActivePublication}
+            onPreview={showPublication}
+            onPreviewLeave={schedulePreviewDismiss}
           />
           <ExperienceSection visible={isVisible("experience")} />
         </div>
