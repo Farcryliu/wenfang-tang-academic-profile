@@ -7,10 +7,13 @@ import { selectedPublications, type Publication } from "./data/publications";
 import { AboutSection } from "./components/sections/AboutSection";
 import { ExperienceSection } from "./components/sections/ExperienceSection";
 import { PublicationsSection } from "./components/sections/PublicationsSection";
+import { PublicationArchivePage } from "./components/PublicationArchivePage";
+import { archiveCategories, currentArchiveCategory } from "./data/archive";
 
 const sectionIds = ["about", "publications", "experience"] as const;
 
 function App() {
+  const category = currentArchiveCategory();
   const [activeSection, setActiveSection] = useState<string>("about");
   const [visibleSections, setVisibleSections] = useState<Set<string>>(() => new Set(["about"]));
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,6 +21,13 @@ function App() {
   const progressRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
+    document.title = category
+      ? `${archiveCategories.find((item) => item.id === category)?.label} · Wenfang Tang 唐文方`
+      : "Wenfang Tang 唐文方 · Academic Profile";
+  }, [category]);
+
+  useEffect(() => {
+    if (category) return undefined;
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -42,13 +52,14 @@ function App() {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [category]);
 
   useEffect(() => {
     if (activeSection !== "publications") setActivePublication(null);
   }, [activeSection]);
 
   useEffect(() => {
+    if (category) return undefined;
     selectedPublications.forEach(({ preview }) => {
       if (!preview) return;
       const image = new Image();
@@ -67,7 +78,7 @@ function App() {
 
     observer.observe(publicationsSection);
     return () => observer.disconnect();
-  }, []);
+  }, [category]);
 
   useEffect(() => {
     const updateProgress = () => {
@@ -93,12 +104,13 @@ function App() {
 
       <Header
         activeSection={activeSection}
+        category={category}
         menuOpen={menuOpen}
         onToggleMenu={() => setMenuOpen((open) => !open)}
         onNavigate={() => setMenuOpen(false)}
       />
 
-      <main id="home" className="page-shell">
+      {category ? <PublicationArchivePage category={category} /> : <main id="home" className="page-shell">
         <div className="intro-layout">
           <ProfileSidebar />
           <AboutSection visible={isVisible("about")} />
@@ -118,7 +130,7 @@ function App() {
           />
           <ExperienceSection visible={isVisible("experience")} />
         </div>
-      </main>
+      </main>}
 
       <ContactFooter />
     </>

@@ -9,5 +9,14 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
+    rolldownOptions: {
+      input: {
+        home: "index.html",
+        books: "books.html",
+        editedVolumes: "edited-volumes.html",
+        articles: "articles.html",
+        blogs: "blogs.html",
+      },
+    },
   },
 });

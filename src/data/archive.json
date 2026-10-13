@@ -1,0 +1,3282 @@
+{
+  "books": [
+    {
+      "id": "proud-and-angry",
+      "year": 2026,
+      "citation": [
+        {
+          "text": "Tang, W., & Xia, Y. (2026). "
+        },
+        {
+          "text": "Proud and angry: Political culture in post-British Hong Kong",
+          "italic": true
+        },
+        {
+          "text": ". Oxford University Press."
+        }
+      ],
+      "title": "Proud and angry: Political culture in post-British Hong Kong",
+      "cover": "assets/covers/proud-and-angry.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0197831559",
+      "amazonSearch": false,
+      "links": []
+    },
+    {
+      "id": "populist-authoritarianism-russian",
+      "year": 2022,
+      "citation": [
+        {
+          "text": "Tang, W. (2022). "
+        },
+        {
+          "text": "Популистский авторитаризм: Китайская политическая культура и живучесть режима",
+          "italic": true
+        },
+        {
+          "text": " [Populist authoritarianism: Chinese political culture and regime sustainability]. Academic Studies Press."
+        }
+      ],
+      "title": "Популистский авторитаризм: Китайская политическая культура и живучесть режима",
+      "cover": "assets/covers/populist-authoritarianism-russian.jpeg",
+      "amazonUrl": "https://www.amazon.com/s?k=9781644697702",
+      "amazonSearch": true,
+      "links": [],
+      "note": "Russian edition"
+    },
+    {
+      "id": "populist-authoritarianism",
+      "year": 2016,
+      "citation": [
+        {
+          "text": "Tang, W. (2016). "
+        },
+        {
+          "text": "Populist authoritarianism: Chinese political culture and regime sustainability",
+          "italic": true
+        },
+        {
+          "text": ". Oxford University Press."
+        }
+      ],
+      "title": "Populist authoritarianism: Chinese political culture and regime sustainability",
+      "cover": "assets/covers/populist-authoritarianism.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0190205792",
+      "amazonSearch": false,
+      "links": [],
+      "note": "Winner of the CHOICE Best Academic Title Award"
+    },
+    {
+      "id": "separate-but-loyal",
+      "year": 2010,
+      "citation": [
+        {
+          "text": "Tang, W., & He, G. (2010). "
+        },
+        {
+          "text": "Separate but loyal: Ethnicity and nationalism in China",
+          "italic": true
+        },
+        {
+          "text": ". East-West Center."
+        }
+      ],
+      "title": "Separate but loyal: Ethnicity and nationalism in China",
+      "cover": "assets/covers/separate-but-loyal.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/1932728864",
+      "amazonSearch": false,
+      "links": []
+    },
+    {
+      "id": "chinese-public-opinion",
+      "year": 2008,
+      "citation": [
+        {
+          "text": "Tang, W. (2008). "
+        },
+        {
+          "text": "中国民意与公民社会",
+          "italic": true
+        },
+        {
+          "text": " [Public opinion and civil society]. Sun Yat-sen University Press."
+        }
+      ],
+      "title": "中国民意与公民社会",
+      "cover": "assets/covers/chinese-public-opinion.png",
+      "amazonUrl": "https://www.amazon.com/dp/7306029967",
+      "amazonSearch": false,
+      "links": []
+    },
+    {
+      "id": "public-opinion-political-change",
+      "year": 2005,
+      "citation": [
+        {
+          "text": "Tang, W. (2005). "
+        },
+        {
+          "text": "Public opinion and political change in China",
+          "italic": true
+        },
+        {
+          "text": ". Stanford University Press."
+        }
+      ],
+      "title": "Public opinion and political change in China",
+      "cover": "assets/covers/public-opinion-political-change.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/B01K3JVQ1Y",
+      "amazonSearch": false,
+      "links": []
+    },
+    {
+      "id": "chinese-urban-life",
+      "year": 2000,
+      "citation": [
+        {
+          "text": "Tang, W., & Parish, W. L. (2000). "
+        },
+        {
+          "text": "Chinese urban life under market reform: The changing social contract",
+          "italic": true
+        },
+        {
+          "text": ". Cambridge University Press."
+        }
+      ],
+      "title": "Chinese urban life under market reform: The changing social contract",
+      "cover": "assets/covers/chinese-urban-life.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0521778654",
+      "amazonSearch": false,
+      "links": []
+    },
+    {
+      "id": "party-intellectuals",
+      "year": 1999,
+      "citation": [
+        {
+          "text": "Tang, W. (1999). "
+        },
+        {
+          "text": "Party intellectuals’ demands for reform in contemporary China",
+          "italic": true
+        },
+        {
+          "text": ". Hoover Institution, Stanford University."
+        }
+      ],
+      "title": "Party intellectuals’ demands for reform in contemporary China",
+      "cover": "assets/covers/party-intellectuals.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0817943226",
+      "amazonSearch": false,
+      "links": []
+    },
+    {
+      "id": "who-should-rule",
+      "year": 1996,
+      "citation": [
+        {
+          "text": "Tang, W. (1996). "
+        },
+        {
+          "text": "谁来做主？中国当代企业决策",
+          "italic": true
+        },
+        {
+          "text": " [Who should rule? Enterprise decision making in contemporary China]. Oxford University Press."
+        }
+      ],
+      "title": "谁来做主？中国当代企业决策",
+      "cover": "assets/covers/who-should-rule.png",
+      "amazonUrl": "https://www.amazon.com/s?k=%E8%B0%81%E6%9D%A5%E5%81%9A%E4%B8%BB%EF%BC%9F%E4%B8%AD%E5%9B%BD%E5%BD%93%E4%BB%A3%E4%BC%81%E4%B8%9A%E5%86%B3%E7%AD%96%20Wenfang%20Tang",
+      "amazonSearch": true,
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1996_who_should_rule_chinese_reduced.pdf"
+        }
+      ]
+    }
+  ],
+  "editedVolumes": [
+    {
+      "id": "political-communication",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "Tang, W., & Iyengar, S. (Eds.). (2012). "
+        },
+        {
+          "text": "Political communication in China: Convergence or divergence between the media and political system in China",
+          "italic": true
+        },
+        {
+          "text": ". Routledge."
+        }
+      ],
+      "title": "Political communication in China: Convergence or divergence between the media and political system in China",
+      "cover": "assets/covers/political-communication.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/0415754658",
+      "amazonSearch": false,
+      "links": [],
+      "note": "Also published as a special issue of Political Communication, 28(3), in 2011."
+    },
+    {
+      "id": "social-political-change",
+      "year": 2007,
+      "citation": [
+        {
+          "text": "Tang, W., & Holzner, B. (Eds.). (2007). "
+        },
+        {
+          "text": "Social and political change in contemporary China: C. K. Yang and the concept of institutional diffusion",
+          "italic": true
+        },
+        {
+          "text": ". University of Pittsburgh Press."
+        }
+      ],
+      "title": "Social and political change in contemporary China: C. K. Yang and the concept of institutional diffusion",
+      "cover": "assets/covers/social-political-change.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/082295933X",
+      "amazonSearch": false,
+      "links": []
+    },
+    {
+      "id": "pitt-in-china-chinese",
+      "year": 2007,
+      "citation": [
+        {
+          "text": "Tang, W. (Ed.). (2007). "
+        },
+        {
+          "text": "美国大学生看中国",
+          "italic": true
+        },
+        {
+          "text": " [Pitt in China]. China Intercontinental Press."
+        }
+      ],
+      "title": "美国大学生看中国",
+      "cover": "assets/covers/pitt-in-china-chinese.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/B018XC1VDQ",
+      "amazonSearch": false,
+      "links": [],
+      "note": "Chinese edition"
+    },
+    {
+      "id": "pitt-in-china",
+      "year": 2007,
+      "citation": [
+        {
+          "text": "Tang, W. (Ed.). (2007). "
+        },
+        {
+          "text": "Pitt in China: A cultural perspective by American college students",
+          "italic": true
+        },
+        {
+          "text": ". China Intercontinental Press."
+        }
+      ],
+      "title": "Pitt in China: A cultural perspective by American college students",
+      "cover": "assets/covers/pitt-in-china.jpg",
+      "amazonUrl": "https://www.amazon.com/dp/B018XC1VGI",
+      "amazonSearch": false,
+      "links": [],
+      "note": "English edition"
+    },
+    {
+      "id": "chinese-political-science-review",
+      "year": 1988,
+      "citation": [
+        {
+          "text": "Chinese political science review",
+          "italic": true
+        },
+        {
+          "text": " (Vol. 1, No. 1). (1988, January)."
+        }
+      ],
+      "title": "Chinese political science review",
+      "cover": "assets/covers/chinese-political-science-review.png",
+      "amazonUrl": "https://www.amazon.com/s?k=Chinese%20political%20science%20review%2C%201%20Wenfang%20Tang",
+      "amazonSearch": true,
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1988_cpsr_ed.pdf"
+        }
+      ],
+      "note": "Journal issue"
+    }
+  ],
+  "articles": [
+    {
+      "id": "article-0",
+      "year": 2024,
+      "citation": [
+        {
+          "text": "He, D., & Tang, W. (2024). Constructed community: Rise and engines of Chinese nationalism under Xi Jinping. "
+        },
+        {
+          "text": "Journal of Contemporary China",
+          "italic": true
+        },
+        {
+          "text": ", 1–23. "
+        },
+        {
+          "text": "https://doi.org/10.1080/10670564.2024.2339303",
+          "href": "https://doi.org/10.1080/10670564.2024.2339303"
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/he_and_tang_2024_constructed_community_jcc.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 0
+    },
+    {
+      "id": "article-1",
+      "year": 2024,
+      "citation": [
+        {
+          "text": "Tang, W. (2024). Democratic authoritarianism: A study of Chinese political orientations. In Y. Zhong & R. Inglehart (Eds.), "
+        },
+        {
+          "text": "China as number 1? Merging values of a rising power",
+          "italic": true
+        },
+        {
+          "text": " (pp. 28–52). University of Michigan Press."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2024_democratic_authoritarianism_w_reviewers_comments.pdf"
+        },
+        {
+          "label": "Book / publisher",
+          "href": "https://www.press.umich.edu/12529012/china_as_number_one"
+        },
+        {
+          "label": "Video",
+          "href": "https://www.youtube.com/watch?v=-JYQrYSIg-8"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 1
+    },
+    {
+      "id": "article-2",
+      "year": 2023,
+      "citation": [
+        {
+          "text": "Tang, W., & Zhang, Y. (2023). Revolution derailed: The struggle for internet control and media freedom in China. "
+        },
+        {
+          "text": "Asian Politics & Policy, 15",
+          "italic": true
+        },
+        {
+          "text": "(4), 563–584. "
+        },
+        {
+          "text": "https://doi.org/10.1111/aspp.12721",
+          "href": "https://doi.org/10.1111/aspp.12721"
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 2
+    },
+    {
+      "id": "article-3",
+      "year": 2023,
+      "citation": [
+        {
+          "text": "Tang, W., & Hu, Y. (2023). Detecting grassroots bribery in an authoritarian society: A survey experimental approach. "
+        },
+        {
+          "text": "Journal of Contemporary China, 32",
+          "italic": true
+        },
+        {
+          "text": "(140), 207–224. "
+        },
+        {
+          "text": "https://doi.org/10.1080/10670564.2022.2071883",
+          "href": "https://doi.org/10.1080/10670564.2022.2071883"
+        }
+      ],
+      "links": [
+        {
+          "label": "Detecting Grassroots Bribery in an Authoritarian Society: A Survey Experimental Approach",
+          "href": "https://www.tandfonline.com/action/showCitFormats?doi=10.1080/10670564.2022.2071883"
+        },
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_and_hu_2023.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 3
+    },
+    {
+      "id": "article-4",
+      "year": 2022,
+      "citation": [
+        {
+          "text": "Tang, W., Hung, J. S. Y., & Ho, B. Y. Y. (2022). Indigenization of political identity in postcolonial Hong Kong. "
+        },
+        {
+          "text": "Frontiers in Political Science, 4",
+          "italic": true
+        },
+        {
+          "text": ", Article 837992. "
+        },
+        {
+          "text": "https://doi.org/10.3389/fpos.2022.837992",
+          "href": "https://doi.org/10.3389/fpos.2022.837992"
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_et_al_2022.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 4
+    },
+    {
+      "id": "article-5",
+      "year": 2022,
+      "citation": [
+        {
+          "text": "Tang, W. (2022). Propatainment: Party history education in China. In A. S. Bell (Ed.), "
+        },
+        {
+          "text": "Party Watch annual report 2021",
+          "italic": true
+        },
+        {
+          "text": ". Center for Advanced China Research."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2022_propatainment.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 5
+    },
+    {
+      "id": "article-6",
+      "year": 2022,
+      "citation": [
+        {
+          "text": "Zhang, Y., & Tang, W. (2022). 中国青年眼中的中国共产党：文化与制度的两重逻辑 [Sources of popular political trust of the Chinese Communist Party]. "
+        },
+        {
+          "text": "经济社会体制比较",
+          "italic": true
+        },
+        {
+          "text": "(1), 158–170."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/中国青年眼中的中国共产党.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 6
+    },
+    {
+      "id": "article-7",
+      "year": 2021,
+      "citation": [
+        {
+          "text": "Pizzi, E., & Tang, W. (2021). Managed mobilization: Ethnic identity and political participation in China. "
+        },
+        {
+          "text": "Nationalism and Ethnic Politics, 27",
+          "italic": true
+        },
+        {
+          "text": "(4), 456–477."
+        }
+      ],
+      "links": [
+        {
+          "label": "Abstract",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_pizzi_managed_mobilization_nep_abstract.jpg"
+        },
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_pizzi_managed_mobilization_nep_abstract.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 7
+    },
+    {
+      "id": "article-8",
+      "year": 2021,
+      "citation": [
+        {
+          "text": "Tang, W. (2021). Understanding authoritarianism: Review essay. "
+        },
+        {
+          "text": "American Affairs, 5",
+          "italic": true
+        },
+        {
+          "text": "(2), 139–153."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_understanding_authoritarianism_with_reader_comments.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 8
+    },
+    {
+      "id": "article-9",
+      "year": 2020,
+      "citation": [
+        {
+          "text": "唐文方. (2020). 定量政治学论文审稿笔记. "
+        },
+        {
+          "text": "中国政治学",
+          "italic": true
+        },
+        {
+          "text": ", 第3辑, 86–99."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/唐文方.定量社会科学论文审稿笔记.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 9
+    },
+    {
+      "id": "article-10",
+      "year": 2020,
+      "citation": [
+        {
+          "text": "Liu, X., & Tang, W. (2020). Sexism in mainland China and Taiwan: A social experimental study. "
+        },
+        {
+          "text": "China: An International Journal, 18",
+          "italic": true
+        },
+        {
+          "text": "(3), 1–21."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/liu_tang_sexism_2020_.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 10
+    },
+    {
+      "id": "article-11",
+      "year": 2020,
+      "citation": [
+        {
+          "text": "Tang, W., & Lin, J. (2020). The CPC as a populist authoritarian party: An impressionable years analysis. "
+        },
+        {
+          "text": "China: An International Journal, 18",
+          "italic": true
+        },
+        {
+          "text": "(1), 26–46."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_lin_cpc_2020.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 11
+    },
+    {
+      "id": "article-12",
+      "year": 2019,
+      "citation": [
+        {
+          "text": "Zhou, Y. J., Tang, W., & Lei, X. (2019). Social desirability of dissent: An IAT experiment with Chinese university students. "
+        },
+        {
+          "text": "Journal of Chinese Political Science",
+          "italic": true
+        },
+        {
+          "text": ", 1–26."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/iat_jcps.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 12
+    },
+    {
+      "id": "article-13",
+      "year": 2018,
+      "citation": [
+        {
+          "text": "唐文方. (2018, March 14). "
+        },
+        {
+          "text": "民意调查与中国整体韧性的五大“意外”发现（读者评论）",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/民意与中国政体韧性五大意外发现读者评论.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "原载《政文观止》，《知乎网》，《昆仑策）《中国政治学》.",
+          "links": [
+            {
+              "label": "《政文观止》",
+              "href": "https://mp.weixin.qq.com/s/OHD_L_LdQXur0-PR2J7IHg"
+            },
+            {
+              "label": "《知乎网》",
+              "href": "https://zhuanlan.zhihu.com/p/34146004"
+            },
+            {
+              "label": "《昆仑策）",
+              "href": "http://www.kunlunce.com/llyj/fl1/2018-02-28/123396.html"
+            },
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2019_《中国政治学》第三辑41-56.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceIndex": 13
+    },
+    {
+      "id": "article-15",
+      "year": 2018,
+      "citation": [
+        {
+          "text": "Tang, W. (2018, February 20). The “surprise” of authoritarian resilience in China. "
+        },
+        {
+          "text": "American Affairs",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2018_american_affairs.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 15
+    },
+    {
+      "id": "article-16",
+      "year": 2017,
+      "citation": [
+        {
+          "text": "Tang, W. (2017). "
+        },
+        {
+          "text": "Public opinion and authoritarian resilience in China",
+          "italic": true
+        },
+        {
+          "text": " [Working paper]."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/authoritarian_resilience3__abbreviated_.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 16
+    },
+    {
+      "id": "article-17",
+      "year": 2017,
+      "citation": [
+        {
+          "text": "Tang, W. (2017). "
+        },
+        {
+          "text": "如何测量中国民主：关于民主与政治幸福感的讨论",
+          "italic": true
+        },
+        {
+          "text": " [Measuring democracy in China: A discussion on democracy and political happiness] (思想评论, Issue 1, No. 10). National Academy of Development and Strategy, Renmin University of China."
+        }
+      ],
+      "links": [
+        {
+          "label": "http://nads.ruc.edu.cn/displaynews.php?id=4563",
+          "href": "http://nads.ruc.edu.cn/displaynews.php?id=4563"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 17
+    },
+    {
+      "id": "article-18",
+      "year": 2017,
+      "citation": [
+        {
+          "text": "Tang, W. (2017). Same bed, different dreams: The bifurcation of the Chinese Communist Party. In W. Shan & L. Yang (Eds.), "
+        },
+        {
+          "text": "Changing state-society relations in contemporary China",
+          "italic": true
+        },
+        {
+          "text": ". World Scientific."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2017_ccp.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "Reprinted in The Chinese Communist Party in Transformation: The Crisis of Identity and Possibility for Renewal, Zheng, Yongnian and Lance LP Gore, eds., New Jersey, London and Singapore: World Scientific (2018).",
+          "links": []
+        },
+        {
+          "text": "Also published as Tang, Wenfang. 2012. “中共党员群体特征及政治态度之分析”- “Chinese Communist Party Members in Transition,” in 《中国治理评论》- China Governance Review, vol. 1, no. 1.",
+          "links": [
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2012_ccp_chinese.pdf"
+            }
+          ]
+        },
+        {
+          "text": "Also published as Tang, Wenfang. 2012. “同心同德还是同床异梦？中共党员群体特征与政治态度分析” – “Same Bed and Different Dreams: An Analysis of Chinese Communist Party Members,” in 陈德升编，《 中共“18大”政治继承：持续、变迁与挑战》- Political Succession in The 18th Party Congress: Continuity, Change and Challenges.",
+          "links": []
+        }
+      ],
+      "sourceIndex": 18
+    },
+    {
+      "id": "article-22",
+      "year": 2017,
+      "citation": [
+        {
+          "text": "Tang, W., Zhang, Y., & Martin, S. (2017). Revolution postponed: The limitation of the internet in promoting democracy in China. In W. Shan & L. Yang (Eds.), "
+        },
+        {
+          "text": "Changing state-society relations in contemporary China",
+          "italic": true
+        },
+        {
+          "text": ". World Scientific."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_zhang_martin_2017_internet.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 22
+    },
+    {
+      "id": "article-23",
+      "year": 2016,
+      "citation": [
+        {
+          "text": "Tang, W., Hu, Y., & Jin, S. (2016). Affirmative inaction: Education, language proficiency, and socioeconomic attainment among China’s Uyghur minority. "
+        },
+        {
+          "text": "Chinese Sociological Review, 48",
+          "italic": true
+        },
+        {
+          "text": "(4), 346–366."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_hu_jin_2016.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 23
+    },
+    {
+      "id": "article-24",
+      "year": 2015,
+      "citation": [
+        {
+          "text": "Tang, W. (2015). 大数据与小数据：社会科学研究方法的探讨 [Big data and small data]. "
+        },
+        {
+          "text": "中山大学学报（社会科学版）, 55",
+          "italic": true
+        },
+        {
+          "text": "(6), 141–146."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2015_大数据与小数据_中大学报.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "Reprinted in Xinhua Wenzhai《新华文摘》2016, No. 6, pp. 149-151.",
+          "links": [
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/新华文摘.pdf"
+            }
+          ]
+        },
+        {
+          "text": "Reprinted in Financial View《中国社会科学网》2016-9-7.",
+          "links": [
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/中国社会科学网.pdf"
+            }
+          ]
+        },
+        {
+          "text": "Reprinted in Political Scientist《政治学人》2016-9-2.",
+          "links": [
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2016_大数据与小数据_政治学人.pdf"
+            }
+          ]
+        },
+        {
+          "text": "Reprinted in Shaohai Marketing Research《勺海市场研究》2016-9-6.",
+          "links": [
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/勺海市场研究.pdf"
+            }
+          ]
+        },
+        {
+          "text": "Reprinted in Higher Education Research《高教研究前沿》2016-8-13.",
+          "links": [
+            {
+              "label": "Read article",
+              "href": "http://mp.weixin.qq.com/s?__biz=MzAxOTIyNTY0Mw==&mid=2650139530&idx=1&sn=277d396dc2463e155884018d207ec5e1&scene=21"
+            }
+          ]
+        }
+      ],
+      "sourceIndex": 24
+    },
+    {
+      "id": "article-30",
+      "year": 2015,
+      "citation": [
+        {
+          "text": "Tang, W., & Yu, D. E. (2015). Public policy satisfaction in urban China. "
+        },
+        {
+          "text": "East Asian Policy, 7",
+          "italic": true
+        },
+        {
+          "text": "(2), 63–77."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_and_yu_2015_public_satisfaction_eap.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 30
+    },
+    {
+      "id": "article-31",
+      "year": 2014,
+      "citation": [
+        {
+          "text": "Tang, W. (2014). The worshipping atheist: Institutional and diffused religiosities in China. "
+        },
+        {
+          "text": "China: An International Journal, 12",
+          "italic": true
+        },
+        {
+          "text": "(3), 1–26."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2014_worshipping_atheist.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 31
+    },
+    {
+      "id": "article-32",
+      "year": 2014,
+      "citation": [
+        {
+          "text": "Lewis-Beck, M., Tang, W., & Martini, N. (2014). A Chinese popularity function: Sources of government support. "
+        },
+        {
+          "text": "Political Research Quarterly, 67",
+          "italic": true
+        },
+        {
+          "text": "(1), 16–25."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/lewis-beck_tang_martini_2013.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 32
+    },
+    {
+      "id": "article-33",
+      "year": 2014,
+      "citation": [
+        {
+          "text": "Tang, W. (2014, February). "
+        },
+        {
+          "text": "中国城市居民公共政策满意度调查报告",
+          "italic": true
+        },
+        {
+          "text": " [Public policy satisfaction in urban China: A survey report]. Institute of Public Policy, South China University of Technology."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2014_公共政策研究.2014.02月专号1.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 33
+    },
+    {
+      "id": "article-34",
+      "year": 2013,
+      "citation": [
+        {
+          "text": "Tang, W. (2013). 政治信任度之比较研究 [A comparative analysis of political trust]. "
+        },
+        {
+          "text": "国外理论动态",
+          "italic": true
+        },
+        {
+          "text": ", July, 66–81."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2013_国外理论动态.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 34
+    },
+    {
+      "id": "article-35",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "Tang, W., & Darr, B. (2012). Chinese nationalism and its political and social origins. "
+        },
+        {
+          "text": "Journal of Contemporary China, 21",
+          "italic": true
+        },
+        {
+          "text": "(77), 811–826."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_and_darr_2012_jcc.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "Reprinted in Tang, Wenfang and Darr, Benjamin. 2014. “Chinese Nationalism and its Political and Social Origins,” in Shuisheng Zhao, ed., Construction of Chinese Nationalism in the Early 21st Century: Domestic Sources and International Implications, Routledge, 1-16.",
+          "links": [
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_and_darr_2014_routledge.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceIndex": 35
+    },
+    {
+      "id": "article-37",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "Tang, W., & Iyengar, S. (2012). The emerging media system in China: Implications for regime change. In W. Tang & S. Iyengar (Eds.), "
+        },
+        {
+          "text": "Convergence or divergence between the media and political system in China",
+          "italic": true
+        },
+        {
+          "text": ". Routledge."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_and_iyengar_2011_pc.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "Also published in Political Communication in China, special issue, Political Communication, 28:3, 263-267, 2011).",
+          "links": [
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_and_iyengar_2011_pc.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceIndex": 37
+    },
+    {
+      "id": "article-39",
+      "year": 2010,
+      "citation": [
+        {
+          "text": "Tang, W. (2010). 何人何时获取何物：美国大学的政治学教育 [“Who gets what when and how”: Political science in American universities]. In H. Zhang (Ed.), "
+        },
+        {
+          "text": "中美大学教育体验与比较：美国知名华裔学者访谈录",
+          "italic": true
+        },
+        {
+          "text": " [Comparative experiences in Chinese and American higher education: Interviews with prominent Chinese American scholars] (pp. 107–120). China Renmin University Press."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2010_who_gets_what_when_and_how.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 39
+    },
+    {
+      "id": "article-40",
+      "year": 2010,
+      "citation": [
+        {
+          "text": "Tang, W. (2010). 近来美国研究中国政治的新走向 [Recent trends in the study of Chinese politics in the U.S.]. In H. Zhang, Z. Xue, & S. Jiang (Eds.), "
+        },
+        {
+          "text": "北美中国学：研究概述与文献资源",
+          "italic": true
+        },
+        {
+          "text": " [Chinese studies in North America: Research and resources] (pp. 328–337). Zhonghua Shuju."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2010_new_trends.pdf"
+        },
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2010_new_trends_censored_texts.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 40
+    },
+    {
+      "id": "article-41",
+      "year": 2010,
+      "citation": [
+        {
+          "text": "Yang, Q., & Tang, W. (2010). Exploring the sources of institutional trust in China: Culture, mobilization, or performance? "
+        },
+        {
+          "text": "Asian Politics & Policy, 2",
+          "italic": true
+        },
+        {
+          "text": "(3), 415–436."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/yang_and_tang_2010_app.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 41
+    },
+    {
+      "id": "article-42",
+      "year": 2009,
+      "citation": [
+        {
+          "text": "Tang, W., & Parish, W. L. (2009). Life chances: Education and jobs. In A. Kipnis, L. Tomba, & J. Unger (Eds.), "
+        },
+        {
+          "text": "Contemporary Chinese society and politics",
+          "italic": true
+        },
+        {
+          "text": " (Vol. 3, pp. 99–121). Routledge."
+        }
+      ],
+      "links": [],
+      "notes": [
+        {
+          "text": "Reprinted from Chinese urban life under market reform: The changing social contract (Cambridge University Press, 2000).",
+          "links": []
+        }
+      ],
+      "sourceIndex": 42
+    },
+    {
+      "id": "article-43",
+      "year": 2009,
+      "citation": [
+        {
+          "text": "Tang, W. (2009). Dispute resolution and legal reform in China. "
+        },
+        {
+          "text": "China Review, 9",
+          "italic": true
+        },
+        {
+          "text": "(1), 73–96."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2009_rule_of_law.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 43
+    },
+    {
+      "id": "article-44",
+      "year": 2008,
+      "citation": [
+        {
+          "text": "Tang, W., & Yang, Q. (2008). The Chinese urban caste system in transition. "
+        },
+        {
+          "text": "The China Quarterly, 196",
+          "italic": true
+        },
+        {
+          "text": ", 759–779."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_and_yang_2008_migrant_workers.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "Also published as Tang, Wenfang and Yang Qing, 2007. “中国农民工社会地位的变迁,” - The Changing Status of Migrant Workers, in Peter De-Sheng Chen, ed. 中国市场转型与社会发展 - Market Transition and Social Transformation, Challenges and Comparisons。 Taipei: Institute of International Relations, National Chengchi University (March), pp. 263-296.",
+          "links": []
+        }
+      ],
+      "sourceIndex": 44
+    },
+    {
+      "id": "article-46",
+      "year": 2007,
+      "citation": [
+        {
+          "text": "Tang, W. (2007). Nationalism and electoral outcome in Taiwan: The impact of identity fence-sitting on voting behavior. "
+        },
+        {
+          "text": "Chinese Journal of International Politics, 1",
+          "italic": true
+        },
+        {
+          "text": "(4)."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2007_taiwan_elections_18p.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "Also published as Tang, Wenfang, 2007. “台湾民众两岸关系中间派的特征和选举行为” - Neutral Identity and Voting in Taiwan, in 国际政治科学 - Science of International Polities. November, Vol. 11.",
+          "links": [
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2007_taiwan_elections_chinese_2p.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceIndex": 46
+    },
+    {
+      "id": "article-48",
+      "year": 2007,
+      "citation": [
+        {
+          "text": "Tang, W. (2007). 人际信任与公民社会 [Interpersonal trust and civil society]. In Z. He, T. Heberer, & G. Schubter (Eds.), "
+        },
+        {
+          "text": "城乡公民参与和政治合法性：中国民主治理研究丛书",
+          "italic": true
+        },
+        {
+          "text": " [Citizens participation and regime legitimacy in contemporary China, urban and rural China in comparative perspective]. Central Compilation & Translation Press."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2007_trust_chinese_2.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 48
+    },
+    {
+      "id": "article-49",
+      "year": 2004,
+      "citation": [
+        {
+          "text": "Tang, W. (2004). 个人意见的公共性：中国六城市居民调查 [Publicizing private opinion in urban China]. "
+        },
+        {
+          "text": "北京大学社会学学刊",
+          "italic": true
+        },
+        {
+          "text": "(1), 48–72."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2004_voicing_opinion_chinese_no_1_pp48-72_6p.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 49
+    },
+    {
+      "id": "article-50",
+      "year": 2003,
+      "citation": [
+        {
+          "text": "Tang, W. (2003). An introduction to survey research in China: A research guide. "
+        },
+        {
+          "text": "Issues and Studies, 39",
+          "italic": true
+        },
+        {
+          "text": "(1)."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2003_issues_and_studies.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 50
+    },
+    {
+      "id": "article-51",
+      "year": 2001,
+      "citation": [
+        {
+          "text": "Tang, W. (2001). Political and social trends in post-Deng urban China: Crisis or stability? "
+        },
+        {
+          "text": "The China Quarterly, 168",
+          "italic": true
+        },
+        {
+          "text": ", 890–909."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2001_china_quarterly_2p.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "Reprinted in Yongnian Zheng, Yiyi Lu and Lynn White III, eds. 2009. The Politics of Modern China: Critical Concepts, Routledge.",
+          "links": []
+        },
+        {
+          "text": "Also published as Tang, Wenfang, 2002. “中国城市地区社会和政治趋势调查” - Survey on the Socio-political Trends in Urban China, 国外理论动态 - New Research Trends in the World, No. 7 (translated by He Zengke).",
+          "links": [
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2002_guowai_lilun_dongtai.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceIndex": 51
+    },
+    {
+      "id": "article-54",
+      "year": 2001,
+      "citation": [
+        {
+          "text": "Tang, W. (2001). Religion and society in Taiwan and China: Evidence from survey data. In S. Hua (Ed.), "
+        },
+        {
+          "text": "Politics and political culture in contemporary China",
+          "italic": true
+        },
+        {
+          "text": ". M. E. Sharpe."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_2001_religion_in_china_taiwan_4p.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 54
+    },
+    {
+      "id": "article-55",
+      "year": 2000,
+      "citation": [
+        {
+          "text": "Tang, W. (2000). 美国人如何看美国和中美关系 [American public opinion on China and U.S.-China relations]. "
+        },
+        {
+          "text": "现代国际关系",
+          "italic": true
+        },
+        {
+          "text": "(4)."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 55
+    },
+    {
+      "id": "article-56",
+      "year": 1996,
+      "citation": [
+        {
+          "text": "Tang, W., Parish, W., & Feng, T. (1996). Chinese labor relations in a changing work environment. "
+        },
+        {
+          "text": "Journal of Contemporary China, 5",
+          "italic": true
+        },
+        {
+          "text": "(3)."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1996_jcc_3p.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 56
+    },
+    {
+      "id": "article-57",
+      "year": 1996,
+      "citation": [
+        {
+          "text": "Tang, W., & Parish, W. (1996). Social reaction to urban reform in China. "
+        },
+        {
+          "text": "Problems of Post-Communism",
+          "italic": true
+        },
+        {
+          "text": ", November–December."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_and_parish_1996_ppc.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 57
+    },
+    {
+      "id": "article-58",
+      "year": 1996,
+      "citation": [
+        {
+          "text": "Tang, W. (1996, June). Housing reform in urban China. "
+        },
+        {
+          "text": "Journal of Human Rights in China",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 58
+    },
+    {
+      "id": "article-59",
+      "year": 1996,
+      "citation": [
+        {
+          "text": "Tang, W., & Feng, T. (1996). 中國的企業勞動關係 [Chinese industrial workers under reform]. "
+        },
+        {
+          "text": "香港社會科學學報",
+          "italic": true
+        },
+        {
+          "text": ", August."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1996_hkjss_5p.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 59
+    },
+    {
+      "id": "article-60",
+      "year": 1996,
+      "citation": [
+        {
+          "text": "Tang, W. (1996). 臺灣經驗與中國大陸的政治改革 [Taiwan experience and China’s political reform]. In X. Huang (Ed.), "
+        },
+        {
+          "text": "再看臺灣：政治、社會、經濟和兩岸關係",
+          "italic": true
+        },
+        {
+          "text": " [Taiwan revisited: Politics, society, economy and the cross-strait relations] (pp. 57–68). Hong Kong Social Science Press."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1996_taiwan_experience.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 60
+    },
+    {
+      "id": "article-61",
+      "year": 1993,
+      "citation": [
+        {
+          "text": "Tang, W. (1993). Post-socialist transition and the environment. "
+        },
+        {
+          "text": "Journal of Public Policy, 13",
+          "italic": true
+        },
+        {
+          "text": ", 89–109."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1993_jpp_2p.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 61
+    },
+    {
+      "id": "article-62",
+      "year": 1993,
+      "citation": [
+        {
+          "text": "Tang, W. (1993). Workplace participation in Chinese local industrial enterprises. "
+        },
+        {
+          "text": "American Journal of Political Science, 37",
+          "italic": true
+        },
+        {
+          "text": "(3), 920–940."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1993_ajps_2p.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 62
+    },
+    {
+      "id": "article-63",
+      "year": 1993,
+      "citation": [
+        {
+          "text": "Tang, W. (1993). 中國社會主義過渡時期的環境保護 [Environmental pollution in post-socialist economies]. "
+        },
+        {
+          "text": "香港社會科學學報",
+          "italic": true
+        },
+        {
+          "text": "(1), 112–134."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1993_hkjss_4p.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 63
+    },
+    {
+      "id": "article-64",
+      "year": 1992,
+      "citation": [
+        {
+          "text": "Tang, W. (1992). Rural industrialization and the dilemma of reform in China. "
+        },
+        {
+          "text": "China Report, 5",
+          "italic": true
+        },
+        {
+          "text": "(3), 8–21. Washington Center for China Studies."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1992_china_report_6p.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 64
+    },
+    {
+      "id": "article-65",
+      "year": 1990,
+      "citation": [
+        {
+          "text": "Tang, W. (1990). China’s conundrum [Review article on Liu Binyan]. "
+        },
+        {
+          "text": "The World and I",
+          "italic": true
+        },
+        {
+          "text": ", August, 388–393."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 65
+    },
+    {
+      "id": "article-66",
+      "year": 1988,
+      "citation": [
+        {
+          "text": "Tang, W. (1988). 資本主義與民主：若干理論問題的討論 [Capitalism and democracy: A discussion of some theoretical issues]. In S. Li (Ed.), "
+        },
+        {
+          "text": "大陸知識分子論政治、社會、經濟",
+          "italic": true
+        },
+        {
+          "text": " [Mainland Chinese scholars on politics, economy and society] (pp. 115–147). Laureate Books."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1988_capitalism_democracy_chinese_19p.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 66
+    },
+    {
+      "id": "article-67",
+      "year": 1987,
+      "citation": [
+        {
+          "text": "Tang, W. (1987). 中國社會主義實踐的回顧 [China’s experience of socialism]. "
+        },
+        {
+          "text": "知識分子, 3",
+          "italic": true
+        },
+        {
+          "text": "(4), 26–34."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1987_china_socialism_chinese_11p.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "Also published as Tang, Wenfang, 1989. “平等，效率和政治參與 --中國社會主义實踐的回顧” - in Hong Kong Baptist College, ed., 江山遼闊立多時 : 論中國現代化 - China’s Modernization. Hong Kong: Qingwen Publishing House, pp. 45-76.",
+          "links": [
+            {
+              "label": "Full text (PDF)",
+              "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1989_pingdeng_xiaolu_and_canyu_hk.pdf"
+            }
+          ]
+        }
+      ],
+      "sourceIndex": 67
+    },
+    {
+      "id": "article-69",
+      "year": 1985,
+      "citation": [
+        {
+          "text": "Tang, W. (1985). Roots of factionalism in Japan and China. "
+        },
+        {
+          "text": "Mid-American Journal of Political Science, 2",
+          "italic": true
+        },
+        {
+          "text": ", 24–42."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 69
+    },
+    {
+      "id": "article-70",
+      "year": 1982,
+      "citation": [
+        {
+          "text": "Tang, W. (1982). 苏加诺的政治平衡及其垮台 [President Sukarno’s political balance and its bankruptcy]. "
+        },
+        {
+          "text": "国际政治, 1",
+          "italic": true
+        },
+        {
+          "text": ", 1–15. Peking University Press."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_1982_sukarno.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 70
+    }
+  ],
+  "blogs": [
+    {
+      "id": "blog-0",
+      "year": 2024,
+      "citation": [
+        {
+          "text": "唐文方. (2024, October 28). 人工智能与非洲“马杀鸡”. "
+        },
+        {
+          "text": "联合早报",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "人工智能与非洲“马杀鸡”",
+          "href": "https://www.zaobao.com/lifestyle/history-heritage/story20241028-4695802"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 0
+    },
+    {
+      "id": "blog-1",
+      "year": 2024,
+      "citation": [
+        {
+          "text": "Tang, W. (2024, September 15). Why China is succeeding in Africa where the US is failing. "
+        },
+        {
+          "text": "South China Morning Post",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/tang_scmp_2024-09-15c.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 1
+    },
+    {
+      "id": "blog-2",
+      "year": 2021,
+      "citation": [
+        {
+          "text": "唐文方. (2021, May 21). 中国应该如何加强国际话语权. "
+        },
+        {
+          "text": "联合早报",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "中国应该如何加强国际话语权",
+          "href": "https://www.zaobao.com/forum/views/story20210521-1148331"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 2
+    },
+    {
+      "id": "blog-3",
+      "year": 2020,
+      "citation": [
+        {
+          "text": "Tang, W. (2020). "
+        },
+        {
+          "text": "Chinese political orientation",
+          "italic": true
+        },
+        {
+          "text": " [Video presentation]. YouTube."
+        }
+      ],
+      "links": [
+        {
+          "label": "Video",
+          "href": "https://www.youtube.com/watch?v=-JYQrYSIg-8"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 3
+    },
+    {
+      "id": "blog-4",
+      "year": 2020,
+      "citation": [
+        {
+          "text": "Tang, W. (2020, September 3). Hampered by fear. "
+        },
+        {
+          "text": "South China Morning Post",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Hampered by Fear",
+          "href": "https://www.scmp.com/author/wenfang-tang"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 4
+    },
+    {
+      "id": "blog-5",
+      "year": 2020,
+      "citation": [
+        {
+          "text": "Tang, W. (2020). "
+        },
+        {
+          "text": "How to create a binary interaction effect chart",
+          "italic": true
+        },
+        {
+          "text": " [Video tutorial]. YouTube."
+        }
+      ],
+      "links": [
+        {
+          "label": "Video",
+          "href": "https://youtu.be/zPqXWm1kTJw"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 5
+    },
+    {
+      "id": "blog-6",
+      "year": 2020,
+      "citation": [
+        {
+          "text": "Tang, W. (2020, February). Telling the Chinese story in the new decade [Interview with Trevor T. W. Wan]. "
+        },
+        {
+          "text": "Public Jurist",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/issue_china_2020_short.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 6
+    },
+    {
+      "id": "blog-7",
+      "year": 2020,
+      "citation": [
+        {
+          "text": "Tang, W. (2020, February 20). Is authoritarianism responsible for the coronavirus outbreak in China? "
+        },
+        {
+          "text": "South China Morning Post",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/scmp_oped_20200220_with_reader_comments.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 7
+    },
+    {
+      "id": "blog-8",
+      "year": 2019,
+      "citation": [
+        {
+          "text": "唐文方. (2019). 美国视中国为最危险对手的深层原因."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/唐文方联合早报17-7-2019.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 8
+    },
+    {
+      "id": "blog-9",
+      "year": 2019,
+      "citation": [
+        {
+          "text": "Tang, W. (2019). [Review of the book "
+        },
+        {
+          "text": "Playing by the informal rules: Why the Chinese regime remains stable despite rising protests",
+          "italic": true
+        },
+        {
+          "text": ", by Y. Li]. "
+        },
+        {
+          "text": "The China Quarterly",
+          "italic": true
+        },
+        {
+          "text": ", 238."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/playing_by_the_informal_rules.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 9
+    },
+    {
+      "id": "blog-10",
+      "year": 2018,
+      "citation": [
+        {
+          "text": "Tang, W.. (2018). A British View of Chinese Nationalism (book review)."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/a_british_view_of_chinese_nationalism.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 10
+    },
+    {
+      "id": "blog-11",
+      "year": 2018,
+      "citation": [
+        {
+          "text": "Tang, W.. (2018). A Language Tour of Japan."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/language_tour_of_japan.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 11
+    },
+    {
+      "id": "blog-12",
+      "year": 2018,
+      "citation": [
+        {
+          "text": "唐文方. (2018). 日本文化之旅."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/日本文化之旅2.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 12
+    },
+    {
+      "id": "blog-13",
+      "year": 2017,
+      "citation": [
+        {
+          "text": "唐文方. (2017). 中国对美谍战的三大杀手软件."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/63_中国对美谍战的三大杀手软件.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 13
+    },
+    {
+      "id": "blog-14",
+      "year": 2017,
+      "citation": [
+        {
+          "text": "唐文方. (2017). 二十世纪中国最成功的美女间谍."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/64_二十世纪中国最成功的色情间谍.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 14
+    },
+    {
+      "id": "blog-15",
+      "year": 2017,
+      "citation": [
+        {
+          "text": "唐文方. (2017). Midair cultural collision. "
+        },
+        {
+          "text": "South China Morning Post",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Read article",
+          "href": "http://www.scmp.com/comment/insight-opinion/article/2088145/how-brash-chinese-air-passengers-are-taking-power-struggle"
+        }
+      ],
+      "notes": [
+        {
+          "text": "reposted by 搜狐学术观察：半空中的文化碰撞.",
+          "links": [
+            {
+              "label": "Read article",
+              "href": "https://www.sohu.com/a/135794123_618422"
+            }
+          ]
+        }
+      ],
+      "sourceIndex": 15
+    },
+    {
+      "id": "blog-17",
+      "year": 2016,
+      "citation": [
+        {
+          "text": "唐文方. (2016). 社会科学研究的理想方法：调查实验."
+        }
+      ],
+      "links": [
+        {
+          "label": "Read article",
+          "href": "http://blog.sina.com.cn/s/blog_753456f70102yj9e.html"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 17
+    },
+    {
+      "id": "blog-18",
+      "year": 2016,
+      "citation": [
+        {
+          "text": "唐文方. (2016). 公众政治行动与政府之虑，凤凰国际智库."
+        }
+      ],
+      "links": [
+        {
+          "label": "Read article",
+          "href": "http://pit.ifeng.com/a/20160811/49758070_0.shtml"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 18
+    },
+    {
+      "id": "blog-19",
+      "year": 2016,
+      "citation": [
+        {
+          "text": "唐文方. (2016). 革命与政变：北大国政系77级学习经历."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/北大国政系77级4.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "reposted by 凤凰国际智库唐文方",
+          "links": [
+            {
+              "label": "凤凰国际智库唐文方",
+              "href": "http://pit.ifeng.com/a/20160805/49723995_0.shtml"
+            }
+          ]
+        },
+        {
+          "text": "reposted by 壹读",
+          "links": [
+            {
+              "label": "壹读",
+              "href": "https://read01.com/6O5RdG.html"
+            }
+          ]
+        },
+        {
+          "text": "reposted by 政治学人文摘精选",
+          "links": [
+            {
+              "label": "reposted by 政治学人文摘精选",
+              "href": "http://www.cuomi.com/html/content/16/1001/19/31024613_595146812.shtml"
+            }
+          ]
+        },
+        {
+          "text": "reposted by 爱微帮",
+          "links": [
+            {
+              "label": "reposted by 爱微帮",
+              "href": "http://www.aiweibang.com/yuedu/134951294.html"
+            }
+          ]
+        },
+        {
+          "text": "reposted by 微信啦",
+          "links": [
+            {
+              "label": "reposted by 微信啦",
+              "href": "http://www.weixinla.com/document/30955467.html"
+            }
+          ]
+        },
+        {
+          "text": "reposted by 负暄私语",
+          "links": [
+            {
+              "label": "reposted by 负暄私语",
+              "href": "http://www.aiweibang.com/yuedu/134923743.html"
+            }
+          ]
+        },
+        {
+          "text": "reposted by 一点资讯",
+          "links": [
+            {
+              "label": "reposted by 一点资讯",
+              "href": "http://inews.ifeng.com/yidian/49723995/news.shtml?ch=ref_zbs_ydzx_news"
+            }
+          ]
+        },
+        {
+          "text": "reposted by IPP评论",
+          "links": [
+            {
+              "label": "IPP评论",
+              "href": "https://morok.com/index.php?thread-61773.htm"
+            }
+          ]
+        }
+      ],
+      "sourceIndex": 19
+    },
+    {
+      "id": "blog-28",
+      "year": 2016,
+      "citation": [
+        {
+          "text": "Tang, W. (2016, June 30). Why is the Chinese government hyper-responsive to public opinion? "
+        },
+        {
+          "text": "IPP Review",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/why_is_chinese_government_hyper-responsive.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 28
+    },
+    {
+      "id": "blog-29",
+      "year": 2016,
+      "citation": [
+        {
+          "text": "唐文方. (2016). 文革后北大第一支篮球队."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 29
+    },
+    {
+      "id": "blog-30",
+      "year": 2015,
+      "citation": [
+        {
+          "text": "唐文方. (2015). 和高原玩心跳：稻城亚丁旅行日记."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/和高原玩心跳3.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 30
+    },
+    {
+      "id": "blog-31",
+      "year": 2015,
+      "citation": [
+        {
+          "text": "Tang, W. (2015, February 13). Language policy and ethnic conflict in China. "
+        },
+        {
+          "text": "China Policy Institute Blog",
+          "italic": true
+        },
+        {
+          "text": ". University of Nottingham."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 31
+    },
+    {
+      "id": "blog-32",
+      "year": 2015,
+      "citation": [
+        {
+          "text": "唐文方. (2015). 美印联合抗中为什么不可行？."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 32
+    },
+    {
+      "id": "blog-33",
+      "year": 2014,
+      "citation": [
+        {
+          "text": "唐文方. (2014). 青春在戈壁滩躁动."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 33
+    },
+    {
+      "id": "blog-34",
+      "year": 2014,
+      "citation": [
+        {
+          "text": "唐文方. (2014). 性服务应该合法化."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/性服务应该合法化2.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 34
+    },
+    {
+      "id": "blog-35",
+      "year": 2014,
+      "citation": [
+        {
+          "text": "唐文方. (2014). 个体户精神赞."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 35
+    },
+    {
+      "id": "blog-36",
+      "year": 2014,
+      "citation": [
+        {
+          "text": "唐文方. (2014). 从衡阳贿选看中国民主的发展."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/从衡阳贿选看中国民主的发展-部分读者评论blog.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 36
+    },
+    {
+      "id": "blog-37",
+      "year": 2013,
+      "citation": [
+        {
+          "text": "唐文方. (2013). 第二次朝鲜战争不是不可能."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 37
+    },
+    {
+      "id": "blog-38",
+      "year": 2013,
+      "citation": [
+        {
+          "text": "唐文方. (2013). 如何解读东海防空识别区."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/唐文方：如何解读东海防空识别区读者评论___www.zaobao.com.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 38
+    },
+    {
+      "id": "blog-39",
+      "year": 2013,
+      "citation": [
+        {
+          "text": "唐文方. (2013). 是神经问题而不是政治问题."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 39
+    },
+    {
+      "id": "blog-40",
+      "year": 2013,
+      "citation": [
+        {
+          "text": "唐文方. (2013). 被忽视的民主“细节”."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 40
+    },
+    {
+      "id": "blog-41",
+      "year": 2013,
+      "citation": [
+        {
+          "text": "唐文方. (2013). 中国民众信任政府的制度原因."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 41
+    },
+    {
+      "id": "blog-42",
+      "year": 2013,
+      "citation": [
+        {
+          "text": "Tang, W., Lewis-Beck, M. S., & Martini, N. F. (2013, June 17). Government for the people in China? Surveys belie claims that Chinese are becoming fed up with their government. "
+        },
+        {
+          "text": "The Diplomat",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/2014-8-12___the_diplomat_with_37_comments.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 42
+    },
+    {
+      "id": "blog-43",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "Tang, W. (2012, November 26). Viewpoint: Are protests moving China backwards? "
+        },
+        {
+          "text": "BBC News",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Read article",
+          "href": "http://www.bbc.com/news/world-asia-china-20405224"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 43
+    },
+    {
+      "id": "blog-44",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "Tang, W. (2012, November 15). China flexes muscles at home and abroad. "
+        },
+        {
+          "text": "Deutsche Welle",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Read article",
+          "href": "http://www.dw.de/china-flexes-muscles-at-home-and-abroad/a-16381398"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 44
+    },
+    {
+      "id": "blog-45",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "Tang, W. (2012, February 20). Bashing China will not benefit America. "
+        },
+        {
+          "text": "The Daily Iowan",
+          "italic": true
+        },
+        {
+          "text": "."
+        }
+      ],
+      "links": [
+        {
+          "label": "Read article",
+          "href": "http://www.dailyiowan.com/2012/02/20/Opinions/27078.html"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 45
+    },
+    {
+      "id": "blog-46",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "唐文方. (2012). 痞子和孔子PK软实力."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 46
+    },
+    {
+      "id": "blog-47",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "唐文方. (2012). 地方治理创新？."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 47
+    },
+    {
+      "id": "blog-48",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "唐文方. (2012). “社会正义”是社会的倒退."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/唐文方社会正义是社会的倒退《联合早报》2012-10-26.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 48
+    },
+    {
+      "id": "blog-49",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "唐文方. (2012). 生活小常识：对付老鼠的三种办法."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/zb04-007-0-now.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 49
+    },
+    {
+      "id": "blog-50",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "唐文方. (2012). 语言政策的失败是民族矛盾的祸根."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/86_语言政策是民族矛盾的祸根.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 50
+    },
+    {
+      "id": "blog-51",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "唐文方. (2012). 美国外交罕见的低级失误."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/唐文方早报加评论.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 51
+    },
+    {
+      "id": "blog-52",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "唐文方. (2012). 美国人为什么认为中国会超过美国？."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/77__美国人为什么认为中国会超过美国.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 52
+    },
+    {
+      "id": "blog-53",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "唐文方. (2012). 中国学生在美国面临一级绑架罪."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 53
+    },
+    {
+      "id": "blog-54",
+      "year": 2012,
+      "citation": [
+        {
+          "text": "唐文方. (2012). 中国政治的进步与倒退：由薄熙来所想到的."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/73_中国政治的进步与倒退.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 54
+    },
+    {
+      "id": "blog-55",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 再玩就要玩完了."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 55
+    },
+    {
+      "id": "blog-56",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 医疗体系反映国民经济的健康."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/58_医疗体制反映国民经济的健康状况.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 56
+    },
+    {
+      "id": "blog-57",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 道德与信任解决不了“见死不救”."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 57
+    },
+    {
+      "id": "blog-58",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 911：那个永远值得忘却的日子."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/56_911.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 58
+    },
+    {
+      "id": "blog-59",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 美国修高铁问什么这么难？."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/15_美国建高铁为什么这么难.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 59
+    },
+    {
+      "id": "blog-60",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 别因为动车追尾而质疑高铁的必要性."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 60
+    },
+    {
+      "id": "blog-61",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 人走之前开的追悼会."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/51_人走之前开的追悼会.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 61
+    },
+    {
+      "id": "blog-62",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 向网络警察推荐一本书."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 62
+    },
+    {
+      "id": "blog-63",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 中国的学术重心应该向西移."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/45_中国的学术重心应当向西移.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 63
+    },
+    {
+      "id": "blog-64",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 异论腐败：CCP还是GDP？."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 64
+    },
+    {
+      "id": "blog-65",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 他说他干过汉族姑娘了."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/36_他说他干过汉族姑娘了.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 65
+    },
+    {
+      "id": "blog-66",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 北大学生证比美国护照管用."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/37_北大学生证比美国护照管用.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 66
+    },
+    {
+      "id": "blog-67",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 团徽能有多神圣？."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/38_团徽能有多神圣.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 67
+    },
+    {
+      "id": "blog-68",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 世界最高的毛泽东像."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 68
+    },
+    {
+      "id": "blog-69",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 民族认同感其实是相对的."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 69
+    },
+    {
+      "id": "blog-70",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 先把新疆历史搞清楚再说."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/40_先把新疆历史理清楚再说.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 70
+    },
+    {
+      "id": "blog-71",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 中越关系：殖民主义还是竞争？."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 71
+    },
+    {
+      "id": "blog-72",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 出乎意料的唐人街."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 72
+    },
+    {
+      "id": "blog-73",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 中国和美国在越南找到了共同语言."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 73
+    },
+    {
+      "id": "blog-74",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 历史的忏悔."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 74
+    },
+    {
+      "id": "blog-75",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 不符合动物保护主义的动物园."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 75
+    },
+    {
+      "id": "blog-76",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 台南小吃：一顿饭换了六个地方."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/25_吃一顿饭换6个地方.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 76
+    },
+    {
+      "id": "blog-77",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 踏着忽必烈的足迹."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 77
+    },
+    {
+      "id": "blog-78",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 夹着尾巴做人的蒙古华侨."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/21_夹着尾巴做人的蒙古华侨.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 78
+    },
+    {
+      "id": "blog-79",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 游牧：人与自然的完美结合."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/20_游牧.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 79
+    },
+    {
+      "id": "blog-80",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 孤独的聚会."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 80
+    },
+    {
+      "id": "blog-81",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 印度的西藏难民."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/12_印度的xz难民.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 81
+    },
+    {
+      "id": "blog-82",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 殖民者的悲剧."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/殖民者的悲剧.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 82
+    },
+    {
+      "id": "blog-83",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 学者、官僚、政治动物."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 83
+    },
+    {
+      "id": "blog-84",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 到印度第9天的新发现."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/6_到印度第9天的新发现.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 84
+    },
+    {
+      "id": "blog-85",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 埃及人为什么造反？."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 85
+    },
+    {
+      "id": "blog-86",
+      "year": 2011,
+      "citation": [
+        {
+          "text": "唐文方. (2011). 虎妈体现了现代化与后现代化的冲突."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 86
+    },
+    {
+      "id": "blog-87",
+      "year": null,
+      "citation": [
+        {
+          "text": "唐文方. (n.d.). 嫉妒之爱是最疯狂的爱."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 87
+    },
+    {
+      "id": "blog-88",
+      "year": null,
+      "citation": [
+        {
+          "text": "唐文方. (n.d.). 瘫痪男人的性幻想."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 88
+    },
+    {
+      "id": "blog-89",
+      "year": null,
+      "citation": [
+        {
+          "text": "唐文方. (n.d.). 美国新贵的消费理念."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/美国新贵的消费理念及读者评论.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 89
+    },
+    {
+      "id": "blog-90",
+      "year": null,
+      "citation": [
+        {
+          "text": "唐文方. (n.d.). 四眼的传奇一生."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/100_四眼儿的传奇一生.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 90
+    },
+    {
+      "id": "blog-91",
+      "year": null,
+      "citation": [
+        {
+          "text": "唐文方. (n.d.). 如何合理利用潜规则？."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 91
+    },
+    {
+      "id": "blog-92",
+      "year": null,
+      "citation": [
+        {
+          "text": "唐文方. (n.d.). 个体户精神赞."
+        }
+      ],
+      "links": [
+        {
+          "label": "Full text (PDF)",
+          "href": "https://www.tangwenfang.org/uploads/8/6/7/7/86775888/联合早报_-_10_02_2014_-_言论_-_11.pdf"
+        }
+      ],
+      "notes": [],
+      "sourceIndex": 92
+    },
+    {
+      "id": "blog-93",
+      "year": 2008,
+      "citation": [
+        {
+          "text": "Tang, W. (2008, August 8). When will China democratize? "
+        },
+        {
+          "text": "China Briefing",
+          "italic": true
+        },
+        {
+          "text": ", 21–23. International Affairs Forum, Center for International Relations."
+        }
+      ],
+      "links": [],
+      "notes": [],
+      "sourceIndex": 93
+    }
+  ]
+}

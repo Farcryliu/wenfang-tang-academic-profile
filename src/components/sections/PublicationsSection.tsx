@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import {
-  articlesAndChapters,
-  booksAndEditedVolumes,
   selectedPublications,
   type Publication,
 } from "../../data/publications";
 import { PublicationPreviewCard } from "../PublicationPreviewCard";
 import { SectionShell } from "../SectionShell";
+import { Citation } from "../Citation";
+import { ArrowUpRightIcon } from "../ArrowIcons";
+import { archiveCategories, archiveHref } from "../../data/archive";
 
 function CitationEntry({
   publication,
@@ -38,19 +39,7 @@ function CitationEntry({
       }
       aria-label={canPreview ? `Show details for ${publication.preview?.title}` : undefined}
     >
-      {publication.citation.map((segment, index) => {
-        const content = segment.italic ? <em>{segment.text}</em> : segment.text;
-
-        if (segment.href) {
-          return (
-            <a key={index} href={segment.href} target="_blank" rel="noreferrer">
-              {content}
-            </a>
-          );
-        }
-
-        return <span key={index}>{content}</span>;
-      })}
+      <Citation segments={publication.citation} />
 
       {active && publication.preview ? (
         <div
@@ -86,26 +75,6 @@ function CitationList({
         />
       ))}
     </ol>
-  );
-}
-
-function PublicationGroup({
-  title,
-  publications,
-}: {
-  title: string;
-  publications: Publication[];
-}) {
-  return (
-    <details className="publication-group">
-      <summary>
-        <span>{title}</span>
-        <span className="publication-count">
-          {publications.length} entries <b aria-hidden="true">+</b>
-        </span>
-      </summary>
-      <CitationList publications={publications} />
-    </details>
   );
 }
 
@@ -145,8 +114,12 @@ export function PublicationsSection({
 
       <div className="publication-archive">
         <p className="archive-heading">Complete publication list</p>
-        <PublicationGroup title="Books and edited volumes" publications={booksAndEditedVolumes} />
-        <PublicationGroup title="Articles and book chapters" publications={articlesAndChapters} />
+        <nav className="archive-category-links" aria-label="Complete publication lists">
+          {archiveCategories.map((category) => <a key={category.id} href={archiveHref(category.id)}>
+            <span>Full {category.label}</span>
+            <span className="archive-category-count">{category.entries.length} entries <ArrowUpRightIcon /></span>
+          </a>)}
+        </nav>
       </div>
     </SectionShell>
   );
