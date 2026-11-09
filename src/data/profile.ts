@@ -20,52 +20,43 @@ export const profile = {
   biography: [
     [
       {
-        text: "Wenfang Tang is Presidential Chair Professor in the School of Humanities and Social Science at The Chinese University of Hong Kong, Shenzhen. His current research focuses on public opinion, mass politics, and political culture in contemporary China.",
+        text: "Wenfang Tang is Presidential Chair Professor in the School of Humanities and Social Science at The Chinese University of Hong Kong, Shenzhen. His research focuses on public opinion, mass politics, and political culture in contemporary China. He holds a B.A. in Law from Peking University, an M.A. from the University of Kansas, and a Ph.D. in Political Science from the University of Chicago. He previously taught at the Hong Kong University of Science and Technology, the University of Iowa, and the University of Pittsburgh.",
       },
     ],
     [
       {
-        text: "He has authored and co-authored books published by Oxford University Press, Cambridge University Press, Stanford University Press, and the University of Pittsburgh Press. His articles have appeared in ",
+        text: "He has published nine books and 55 journal articles. His book ",
       },
-      {
-        text: "American Journal of Political Science, Political Research Quarterly, Political Communication, Journal of Public Policy, The China Quarterly, and Journal of Contemporary China",
-        emphasis: true,
-      },
-      { text: ", among others. His book " },
       {
         text: "Populist Authoritarianism: Chinese Political Culture and Regime Sustainability",
         emphasis: true,
       },
       {
-        text: " (Oxford University Press, 2016) received the CHOICE Outstanding Academic Title Award.",
+        text: " (Oxford University Press, 2016) received a CHOICE Outstanding Academic Title award. Oxford University Press released the print edition of his latest book, ",
       },
-    ],
-    [
       {
-        text: "Professor Tang received his B.A. in Law from Peking University, M.A. from the University of Kansas, and Ph.D. in Political Science from the University of Chicago. He previously served at the Hong Kong University of Science and Technology (2019–2022), the University of Iowa (2009–2019), and the University of Pittsburgh (1990–2009), and has held visiting appointments at several universities and research institutions.",
-      },
-    ],
-    [
-      { text: "He is currently the Field Chief Editor of " },
-      {
-        text: "Frontiers in Political Science",
+        text: "Proud and Angry: Political Culture in Post-British Hong Kong",
         emphasis: true,
       },
-      {
-        text: " (since June 2025) and the Specialty Chief Editor for Comparative Governance at ",
-      },
-      {
-        text: "Frontiers in Political Science",
-        emphasis: true,
-      },
-      {
-        text: " (since June 2021). He also serves as an editorial board member of ",
-      },
+      { text: ", co-authored with Ying Xia, in 2026. His articles have appeared in the " },
+      { text: "American Journal of Political Science", emphasis: true },
+      { text: ", " },
+      { text: "Political Research Quarterly", emphasis: true },
+      { text: ", " },
+      { text: "Political Communication", emphasis: true },
+      { text: ", and " },
+      { text: "The China Quarterly", emphasis: true },
+      { text: ", among others." },
+    ],
+    [
+      { text: "Professor Tang serves as a Field Chief Editor of " },
+      { text: "Frontiers in Political Science", emphasis: true },
+      { text: " and sits on the editorial boards of " },
       { text: "Political Psychology", emphasis: true },
       { text: " and " },
       { text: "Advances in Political Psychology", emphasis: true },
       {
-        text: ", and as an Executive Committee member of Research Committee 17 (RC17) on Comparative Public Opinion, International Political Science Association (IPSA) (2016\u20132025).",
+        text: ". From 2016 to 2025, he served on the executive committee of the International Political Science Association’s Research Committee on Comparative Public Opinion (RC17).",
       },
     ],
   ] satisfies BiographySegment[][],

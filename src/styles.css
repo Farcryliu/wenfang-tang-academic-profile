@@ -499,6 +499,17 @@ summary {
   pointer-events: none;
 }
 
+.story-section.biography-section {
+  --biography-top: 0px;
+  min-height: 0;
+  padding-top: var(--biography-top);
+}
+
+.biography-section .section-number {
+  /* Compensate for the space above the numerals in the serif font. */
+  top: calc(var(--biography-top) - 0.2em);
+}
+
 .story-section h2 {
   position: relative;
   max-width: 730px;
@@ -1226,8 +1237,8 @@ summary {
     transform: none;
   }
 
-  .biography-section {
-    min-height: 82vh;
+  .story-section.biography-section {
+    --biography-top: 40px;
   }
 }
 
