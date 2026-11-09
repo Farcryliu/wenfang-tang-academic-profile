@@ -8,8 +8,7 @@
   --section-divider: rgba(45, 114, 184, 0.42);
   --gold: #b59358;
   --line: #dbe1e8;
-  --serif: Georgia, "Times New Roman", "Noto Serif SC", serif;
-  --sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   --header-h: 82px;
 }
 
@@ -26,7 +25,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--sans);
+  font-family: var(--font);
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -95,8 +94,8 @@ summary {
 }
 
 .wordmark-en {
-  font-family: var(--serif);
   font-size: 1.34rem;
+  font-weight: 600;
   letter-spacing: -0.02em;
 }
 
@@ -257,9 +256,8 @@ summary {
 
 .profile-identity h1 {
   margin: 0 0 14px;
-  font-family: var(--serif);
   font-size: clamp(1.7rem, 1.9vw, 1.9rem);
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.12;
 }
@@ -399,7 +397,6 @@ summary {
 .publication-preview-card__title h3 {
   grid-column: 1;
   margin: 5px 0 0;
-  font-family: var(--serif);
   font-size: 1.06rem;
   font-weight: 500;
   line-height: 1.32;
@@ -493,8 +490,8 @@ summary {
   top: 9vh;
   right: 0;
   color: rgba(19, 35, 56, 0.08);
-  font-family: var(--serif);
   font-size: clamp(3.4rem, 6vw, 5.6rem);
+  font-weight: 500;
   line-height: 0.8;
   pointer-events: none;
 }
@@ -506,17 +503,15 @@ summary {
 }
 
 .biography-section .section-number {
-  /* Compensate for the space above the numerals in the serif font. */
-  top: calc(var(--biography-top) - 0.2em);
+  top: calc(var(--biography-top) - 0.06em);
 }
 
 .story-section h2 {
   position: relative;
   max-width: 730px;
   margin: 18px 0 30px;
-  font-family: var(--serif);
   font-size: clamp(1.7rem, 1.9vw, 1.9rem);
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.12;
 }
@@ -525,7 +520,6 @@ summary {
   max-width: 680px;
   margin: 0;
   color: var(--ink-soft);
-  font-family: var(--serif);
   font-size: clamp(1.25rem, 2vw, 1.55rem);
   line-height: 1.55;
 }
@@ -545,21 +539,21 @@ summary {
 }
 
 .biography-copy {
-  max-width: 730px;
-  padding-top: 4px;
+  max-width: 64ch;
+  padding-top: 22px;
   border-top: 1px solid var(--line);
   color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.72;
 }
 
 .biography-copy p {
-  margin: 24px 0 0;
-  font-size: 1.02rem;
-  line-height: 1.85;
+  margin: 0;
+  text-wrap: pretty;
 }
 
-.biography-copy em {
-  color: var(--ink);
-  font-family: var(--serif);
+.biography-copy p + p {
+  margin-top: 1.1em;
 }
 
 .email-link svg {
@@ -596,7 +590,6 @@ summary {
 .publication-list h3,
 .timeline h3 {
   margin: 0;
-  font-family: var(--serif);
   font-size: 1.15rem;
   font-weight: 500;
   line-height: 1.35;
@@ -614,7 +607,6 @@ summary {
   padding: 12px 0 12px 32px;
   border-left: 3px solid var(--gold);
   color: var(--ink);
-  font-family: var(--serif);
   font-size: clamp(1.35rem, 2.6vw, 2rem);
   line-height: 1.45;
 }
@@ -627,7 +619,6 @@ summary {
   display: block;
   margin-top: 16px;
   color: var(--ink-soft);
-  font-family: var(--sans);
   font-size: 0.7rem;
   font-weight: 650;
   letter-spacing: 0.12em;
@@ -646,13 +637,11 @@ summary {
 
 .book-year {
   color: #90bde7;
-  font-family: var(--serif);
   font-size: 2.4rem;
 }
 
 .featured-book h3 {
   margin: 8px 0 0;
-  font-family: var(--serif);
   font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 400;
   line-height: 1.05;
@@ -661,7 +650,6 @@ summary {
 .book-subtitle {
   margin: 9px 0 18px;
   color: #d8e2ed;
-  font-family: var(--serif);
   font-size: 1.18rem;
 }
 
@@ -698,7 +686,6 @@ summary {
 .publication-list .publication-subtitle {
   margin-top: 5px;
   color: var(--ink);
-  font-family: var(--serif);
   font-size: 1rem;
 }
 
@@ -712,7 +699,7 @@ summary {
   margin: 0;
   padding: 0 0 18px 1.6rem;
   color: var(--ink-soft);
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.75;
   text-indent: -1.6rem;
 }
@@ -760,9 +747,11 @@ summary {
   border-top: 1px solid var(--line);
 }
 
-.citation-entry em {
+.citation-entry cite,
+.archive-citation cite {
   color: var(--ink);
-  font-family: var(--serif);
+  font-style: normal;
+  font-weight: 500;
 }
 
 .citation-entry a {
@@ -809,7 +798,6 @@ summary {
   padding: 20px 0;
   cursor: pointer;
   color: var(--ink);
-  font-family: var(--serif);
   font-size: 1.15rem;
   list-style: none;
 }
@@ -821,7 +809,6 @@ summary {
 .publication-count {
   flex: none;
   color: var(--ink-soft);
-  font-family: var(--sans);
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.04em;
@@ -892,7 +879,6 @@ summary {
   margin-top: 22px;
   color: var(--ink-soft);
   font-size: 0.8rem;
-  font-style: italic;
 }
 
 .timeline {
@@ -930,7 +916,6 @@ summary {
 
 .experience-subsection > h3 {
   margin: 0 0 24px;
-  font-family: var(--serif);
   font-size: clamp(1.45rem, 2.2vw, 1.8rem);
   font-weight: 400;
   letter-spacing: -0.02em;
@@ -966,7 +951,6 @@ summary {
 
 .leadership-list h4 {
   margin: 0;
-  font-family: var(--serif);
   font-size: 1.08rem;
   font-weight: 500;
   line-height: 1.4;
@@ -993,7 +977,6 @@ summary {
 
 .service-note p {
   margin: 8px 0 0;
-  font-family: var(--serif);
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -1047,7 +1030,6 @@ summary {
 
 .footer-intro h2 {
   margin: 0;
-  font-family: var(--serif);
   font-size: clamp(2.25rem, 3.4vw, 3.2rem);
   font-weight: 400;
   letter-spacing: -0.025em;
@@ -1077,7 +1059,6 @@ summary {
   margin-top: 18px;
   padding: 15px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  font-family: var(--serif);
   font-size: clamp(1.05rem, 1.8vw, 1.4rem);
   line-height: 1.4;
 }
@@ -1261,12 +1242,17 @@ summary {
   }
 
   .profile-sticky {
-    grid-template-columns: 112px 1fr;
-    gap: 20px;
+    grid-template-columns: clamp(88px, 26vw, 108px) minmax(0, 1fr);
+    gap: 14px 16px;
+    padding-bottom: 24px;
+  }
+
+  .profile-identity {
+    align-self: center;
   }
 
   .profile-identity h1 {
-    font-size: 1.65rem;
+    font-size: clamp(1.2rem, 5.5vw, 1.45rem);
   }
 
   .profile-identity h1 span {
@@ -1290,14 +1276,28 @@ summary {
     display: none;
   }
 
+  .portrait-wrap {
+    grid-row: auto;
+  }
+
   .portrait-wrap img {
-    height: 210px;
+    height: clamp(152px, 44vw, 190px);
   }
 
   .profile-links {
     grid-column: 1 / -1;
     width: 100%;
-    margin-top: 4px;
+  }
+
+  .story-section.biography-section {
+    --biography-top: 34px;
+    padding-bottom: 56px;
+  }
+
+  .biography-copy {
+    padding-top: 20px;
+    font-size: 0.925rem;
+    line-height: 1.75;
   }
 
   .story-section {
@@ -1414,13 +1414,13 @@ summary {
 .archive-category-links > a {
   display: flex; align-items: center; justify-content: space-between; gap: 20px;
   padding: 20px 0; border-bottom: 1px solid var(--line);
-  font-family: var(--serif); font-size: 1.15rem;
+  font-size: 1.15rem;
   transition: color 180ms ease, padding 180ms ease;
 }
 .archive-category-links > a:hover { color: var(--blue); padding-left: 8px; }
 .archive-category-count {
   display: flex; align-items: center; gap: 14px; flex: none;
-  color: var(--ink-soft); font-family: var(--sans); font-size: 0.75rem;
+  color: var(--ink-soft); font-size: 0.75rem;
 }
 .archive-category-count svg, .archive-resource-links svg {
   width: 16px; fill: none; stroke: currentColor; stroke-width: 1.4;
@@ -1456,15 +1456,15 @@ summary {
 .archive-sidebar nav { margin-top: 20px; border-top: 1px solid var(--line); }
 .archive-sidebar nav a {
   display: flex; justify-content: space-between; align-items: baseline; gap: 12px;
-  padding: 16px 0; border-bottom: 1px solid var(--line); font-family: var(--serif); font-size: 1.08rem;
+  padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 1.08rem;
 }
-.archive-sidebar nav a > span:last-child { color: var(--ink-soft); font-family: var(--sans); font-size: 0.7rem; }
+.archive-sidebar nav a > span:last-child { color: var(--ink-soft); font-size: 0.7rem; }
 .archive-sidebar nav a:hover, .archive-sidebar nav a[aria-current="page"] { color: var(--blue); }
 .archive-sidebar nav a[aria-current="page"] { border-bottom-color: var(--blue); }
 .archive-content { min-width: 0; }
 .archive-page-heading { position: relative; padding-bottom: 34px; border-bottom: 1px solid var(--section-divider); }
 .archive-page-heading h1 {
-  margin: 12px 0 0; font-family: var(--serif); font-size: clamp(2.5rem, 4.2vw, 3.6rem);
+  margin: 12px 0 0; font-size: clamp(2.5rem, 4.2vw, 3.6rem);
   font-weight: 400; line-height: 1.12; letter-spacing: -0.035em;
 }
 .archive-total { display: inline-block; margin-top: 18px; color: var(--blue); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; }
@@ -1478,10 +1478,9 @@ summary {
 .archive-book-cover img { width: auto; max-width: 142px; max-height: 216px; box-shadow: 3px 7px 15px rgba(19, 35, 56, 0.17); }
 .archive-entry-year { color: var(--blue); font-size: 0.73rem; letter-spacing: 0.07em; }
 .archive-citation {
-  margin: 0; padding-left: 1.6rem; color: var(--ink-soft); font-size: 1rem;
+  margin: 0; padding-left: 1.6rem; color: var(--ink-soft); font-size: 0.95rem;
   line-height: 1.8; text-indent: -1.6rem; overflow-wrap: anywhere;
 }
-.archive-citation em { color: var(--ink); font-family: var(--serif); }
 .archive-citation a { color: var(--blue); }
 .archive-citation a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .archive-book-copy .archive-citation { margin-top: 10px; }
@@ -1496,7 +1495,7 @@ summary {
 .archive-year-index a { color: var(--ink-soft); font-size: 0.76rem; }
 .archive-year-index a:hover { color: var(--blue); text-decoration: underline; text-underline-offset: 4px; }
 .archive-year-group { display: grid; grid-template-columns: 68px minmax(0, 1fr); gap: 26px; padding: 30px 0; border-bottom: 1px solid var(--section-divider); }
-.archive-year-group h2 { margin: 3px 0 0; color: var(--blue); font-family: var(--serif); font-size: 1.35rem; font-weight: 400; }
+.archive-year-group h2 { margin: 3px 0 0; color: var(--blue); font-size: 1.35rem; font-weight: 400; }
 .archive-text-list { margin: 0; padding: 0; list-style: none; }
 .archive-text-list > li + li { margin-top: 26px; padding-top: 26px; border-top: 1px solid var(--line); }
 .archive-entry-notes { margin-top: 18px; padding-left: 18px; border-left: 1px solid var(--line); color: var(--ink-soft); font-size: 0.76rem; line-height: 1.75; }

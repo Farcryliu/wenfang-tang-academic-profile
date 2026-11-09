@@ -12,16 +12,8 @@ export function AboutSection({ visible }: { visible: boolean }) {
       className="biography-section"
     >
       <div className="biography-copy">
-        {profile.biography.map((paragraph, paragraphIndex) => (
-          <p key={paragraphIndex}>
-            {paragraph.map((segment, segmentIndex) =>
-              segment.emphasis ? (
-                <em key={segmentIndex}>{segment.text}</em>
-              ) : (
-                <span key={segmentIndex}>{segment.text}</span>
-              ),
-            )}
-          </p>
+        {profile.biography.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
         ))}
       </div>
     </SectionShell>
