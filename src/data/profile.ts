@@ -1,3 +1,5 @@
+import { biography } from "./biography.json";
+
 export const profile = {
   name: "Wenfang Tang",
   nameChinese: "唐文方",
@@ -12,9 +14,8 @@ export const profile = {
   email: "tangwenfang@cuhk.edu.cn",
   officeAddress: [] as string[],
   universityProfile: "https://myweb.cuhk.edu.cn/tangwenfang/Home/Index",
-  biography: [
-    "Wenfang Tang is a Presidential Chair Professor in the School of Humanities and Social Science at The Chinese University of Hong Kong, Shenzhen, focusing his research on public opinion, mass politics, and political culture in contemporary China.",
-    "Professor Tang is the author of 9 monographs and 55 journal articles. His book, Populist Authoritarianism: Chinese Political Culture and Regime Sustainability (Oxford University Press, 2016), received the CHOICE Outstanding Academic Title award, and his latest monograph, Proud and Angry: Political Culture in Post-British Hong Kong, was published by Oxford University Press in 2026. His academic articles have appeared in leading journals such as the American Journal of Political Science, Political Research Quarterly, Political Communication, and The China Quarterly.",
-    "He currently serves as Field Chief Editor of Frontiers in Political Science, sits on the editorial boards of journals including Political Psychology, and serves as an Executive Committee Member of the Research Committee on Comparative Public Opinion of the International Political Science Association (IPSA).",
-  ],
+  biography: biography
+    .split(/\r?\n(?:[ \t]*\r?\n)+/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean),
 };

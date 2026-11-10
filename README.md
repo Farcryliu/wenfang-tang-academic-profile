@@ -14,6 +14,7 @@ npm run dev
 ## Content maintenance
 
 - Personal details, research areas, contact information, and education: `src/data/profile.ts`
+- Homepage biography: `src/data/biography.json`, editable through [Pages CMS](https://app.pagescms.org/) using `.pages.yml`. Leave a blank line between paragraphs.
 - Selected publications and homepage previews: `src/data/publications.ts`
 - Complete books, edited volumes, articles, and blogs: `src/data/archive.json`
 - Archive types, labels, and page links: `src/data/archive.ts`

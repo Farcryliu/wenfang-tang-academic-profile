@@ -1,0 +1,16 @@
+content:
+  - name: biography
+    label: 个人简介
+    type: file
+    path: src/data/biography.json
+    format: json
+    operations:
+      create: false
+      rename: false
+      delete: false
+    fields:
+      - name: biography
+        label: 首页简介正文
+        type: text
+        description: 可以从 Word 粘贴正文。段落之间请留一空行。
+        required: true
