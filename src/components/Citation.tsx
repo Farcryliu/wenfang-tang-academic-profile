@@ -1,4 +1,4 @@
-import type { CitationSegment } from "../data/publications";
+import type { CitationSegment } from "../data/archive";
 
 export function Citation({ segments }: { segments: CitationSegment[] }) {
   return <>{segments.map((segment, index) => {

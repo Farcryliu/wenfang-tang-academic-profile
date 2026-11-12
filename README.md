@@ -15,20 +15,19 @@ npm run dev
 
 - Personal details, research areas, contact information, and education: `src/data/profile.ts`
 - Homepage biography: `src/data/biography.json`, editable through [Pages CMS](https://app.pagescms.org/) using `.pages.yml`. Leave a blank line between paragraphs.
-- Selected publications and homepage previews: `src/data/publications.ts`
-- Complete books, edited volumes, articles, and blogs: `src/data/archive.json`
+- Books, edited volumes, articles, and op-eds: `src/data/archive.json`
 - Archive types, labels, and page links: `src/data/archive.ts`
 - Original website bibliography and link snapshot (retrieved October 11, 2026): `src/data/legacy-publications.json`
 - Positions, academic projects, and editorial roles: `src/data/experience.ts`
 
-The homepage keeps its About, Selected Publications, and Experience sections.
+The homepage includes About, Publication list, and Experience sections.
 The complete directories are separate static pages: `books.html`,
 `edited-volumes.html`, `articles.html`, and `blogs.html`. Each can be opened
 directly or refreshed on GitHub Pages, including under the repository subpath.
 
 The archive contains 9 books, 5 edited volumes/editions, 55 primary article
-entries (with reprint and alternate-version notes), and 85 blog entries
-(with repost notes). The legacy site's original category membership is retained.
+entries (with reprint and alternate-version notes), and 27 op-ed entries
+(with repost notes).
 Book covers are local assets in `public/assets/covers/`. Covers link to the
 legacy Amazon listings; where no product link was supplied (the Russian edition,
 the 1996 Chinese monograph, and the 1988 journal issue), the link is explicitly

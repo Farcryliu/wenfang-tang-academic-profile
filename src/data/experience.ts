@@ -12,8 +12,8 @@ export type LeadershipRole = {
 
 export const academicRoles: AcademicRole[] = [
   {
-    period: "Present",
-    title: "Dean, School of Humanities and Social Science",
+    period: "2022 –",
+    title: "Presidential Chair Professor, and Dean, School of Humanities and Social Science",
     organization: "The Chinese University of Hong Kong, Shenzhen",
   },
   {
@@ -23,7 +23,7 @@ export const academicRoles: AcademicRole[] = [
   },
   {
     period: "2009—2019",
-    title: "Chair, Department of Political Science",
+    title: "Stanley Hua Hsia Chair Professor of Political Science, and Chair, Department of Political Science",
     organization: "University of Iowa",
   },
   {
@@ -37,7 +37,7 @@ export const academicProjects: LeadershipRole[] = [
   {
     role: "Leading role",
     title: "World Values Survey",
-    organization: "Sixth and seventh waves",
+    organization: "6th, 7th, and 8th Waves",
   },
   {
     role: "Academic Advisory Committee",
@@ -69,11 +69,11 @@ export const editorialRoles: LeadershipRole[] = [
   },
   {
     role: "Editorial Board Member",
-    title: "Political Psychology",
+    title: "Political Psychology, 2020-2024",
   },
   {
     role: "Editorial Board Member",
-    title: "Advances in Political Psychology",
+    title: "Advances in Political Psychology, 2020-2024",
   },
   {
     role: "2016—2025",

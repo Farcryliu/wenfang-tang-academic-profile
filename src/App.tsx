@@ -1,9 +1,7 @@
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ContactFooter } from "./components/ContactFooter";
 import { Header } from "./components/Header";
-import { PublicationPreviewCard } from "./components/PublicationPreviewCard";
 import { ProfileSidebar } from "./components/ProfileSidebar";
-import { selectedPublications, type Publication } from "./data/publications";
 import { AboutSection } from "./components/sections/AboutSection";
 import { ExperienceSection } from "./components/sections/ExperienceSection";
 import { PublicationsSection } from "./components/sections/PublicationsSection";
@@ -17,38 +15,7 @@ function App() {
   const [activeSection, setActiveSection] = useState<string>("about");
   const [visibleSections, setVisibleSections] = useState<Set<string>>(() => new Set(["about"]));
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activePublication, setActivePublication] = useState<Publication | null>(null);
   const progressRef = useRef<HTMLSpanElement>(null);
-  const previewDismissTimer = useRef<number | null>(null);
-
-  const cancelPreviewDismiss = useCallback(() => {
-    if (previewDismissTimer.current !== null) {
-      window.clearTimeout(previewDismissTimer.current);
-      previewDismissTimer.current = null;
-    }
-  }, []);
-
-  const showPublication = useCallback((publication: Publication) => {
-    cancelPreviewDismiss();
-    setActivePublication(publication);
-  }, [cancelPreviewDismiss]);
-
-  const schedulePreviewDismiss = useCallback(() => {
-    // Inline previews on small/touch screens remain open after a tap.
-    if (!window.matchMedia("(min-width: 981px) and (hover: hover)").matches) return;
-    cancelPreviewDismiss();
-    // Allow the pointer to cross the small gap from a citation to its card.
-    previewDismissTimer.current = window.setTimeout(() => {
-      previewDismissTimer.current = null;
-      const hoveredPreview = document.querySelector(
-        ".citation-entry.has-preview:hover, .publication-preview-column .publication-preview-card:hover",
-      );
-      if (!hoveredPreview) setActivePublication(null);
-    }, 180);
-  }, [cancelPreviewDismiss]);
-
-  useEffect(() => cancelPreviewDismiss, [cancelPreviewDismiss]);
-
   useEffect(() => {
     document.title = category
       ? `${archiveCategories.find((item) => item.id === category)?.label} · Wenfang Tang 唐文方`
@@ -80,32 +47,6 @@ function App() {
       if (section) observer.observe(section);
     });
 
-    return () => observer.disconnect();
-  }, [category]);
-
-  useEffect(() => {
-    if (activeSection !== "publications") setActivePublication(null);
-  }, [activeSection]);
-
-  useEffect(() => {
-    if (category) return undefined;
-    selectedPublications.forEach(({ preview }) => {
-      if (!preview) return;
-      const image = new Image();
-      image.src = `${import.meta.env.BASE_URL}${preview.image}`;
-    });
-
-    const publicationsSection = document.getElementById("publications");
-    if (!publicationsSection) return undefined;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) setActivePublication(null);
-      },
-      { threshold: 0.01 },
-    );
-
-    observer.observe(publicationsSection);
     return () => observer.disconnect();
   }, [category]);
 
@@ -144,33 +85,8 @@ function App() {
           <ProfileSidebar />
           <AboutSection visible={isVisible("about")} />
         </div>
-        <aside className="publication-preview-column" aria-label="Selected publication details">
-          <div className="publication-preview-sticky">
-            {activePublication ? (
-              <div
-                onPointerEnter={(event) => {
-                  if (event.pointerType === "mouse") cancelPreviewDismiss();
-                }}
-                onPointerLeave={(event) => {
-                  if (event.pointerType === "mouse") schedulePreviewDismiss();
-                }}
-                onFocus={cancelPreviewDismiss}
-                onBlur={(event) => {
-                  if (!event.currentTarget.contains(event.relatedTarget as Node)) schedulePreviewDismiss();
-                }}
-              >
-                <PublicationPreviewCard key={activePublication.id} publication={activePublication} />
-              </div>
-            ) : null}
-          </div>
-        </aside>
         <div className="story-column">
-          <PublicationsSection
-            visible={isVisible("publications")}
-            activePublication={activePublication}
-            onPreview={showPublication}
-            onPreviewLeave={schedulePreviewDismiss}
-          />
+          <PublicationsSection visible={isVisible("publications")} />
           <ExperienceSection visible={isVisible("experience")} />
         </div>
       </main>}

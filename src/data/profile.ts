@@ -12,7 +12,11 @@ export const profile = {
     "Dean, School of Humanities and Social Science",
   ],
   email: "tangwenfang@cuhk.edu.cn",
-  officeAddress: [] as string[],
+  phone: "0755-84273180",
+  officeAddress: {
+    room: "1214 TxB",
+    street: "2001 Longxiang Blvd., Longgang, Shenzhen, Guangdong, China",
+  },
   universityProfile: "https://myweb.cuhk.edu.cn/tangwenfang/Home/Index",
   biography: biography
     .split(/\r?\n(?:[ \t]*\r?\n)+/)

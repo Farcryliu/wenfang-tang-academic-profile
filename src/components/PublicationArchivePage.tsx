@@ -56,7 +56,7 @@ export function PublicationArchivePage({ category }: { category: ArchiveCategory
   const current = archiveCategories.find((item) => item.id === category)!;
   return <main id="home" className="archive-page">
     <aside className="archive-sidebar">
-      <a className="archive-back" href={homeHref("publications")}><span aria-hidden="true">←</span> Selected Publications</a>
+      <a className="archive-back" href={homeHref("publications")}><span aria-hidden="true">←</span> Publication list</a>
       <p className="section-kicker">Publications</p>
       <nav aria-label="Publication categories">
         {archiveCategories.map((item) => <a key={item.id} href={archiveHref(item.id)}
@@ -69,12 +69,12 @@ export function PublicationArchivePage({ category }: { category: ArchiveCategory
       <header className="archive-page-heading">
         <p className="section-kicker">Complete publication list</p>
         <h1>{current.label}</h1>
-        <span className="archive-total">{current.entries.length} entries</span>
+        {category !== "blogs" && <span className="archive-total">{current.entries.length} entries</span>}
       </header>
       {category === "books" ? <BookList books={fullBooks} />
         : category === "edited-volumes" ? <BookList books={fullEditedVolumes} />
         : <TextArchive entries={current.entries} />}
-      <a className="archive-back archive-return" href={homeHref("publications")}><span aria-hidden="true">←</span> Back to Selected Publications</a>
+      <a className="archive-back archive-return" href={homeHref("publications")}><span aria-hidden="true">←</span> Back to Publication list</a>
     </div>
   </main>;
 }
