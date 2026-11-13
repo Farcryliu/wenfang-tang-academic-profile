@@ -22,14 +22,13 @@ function LeadershipList({ items }: { items: LeadershipRole[] }) {
   );
 }
 
-export function ExperienceSection({ visible }: { visible: boolean }) {
+export function ExperienceSection() {
   return (
     <SectionShell
       id="experience"
       index="03"
       kicker="Experience"
       title="Positions"
-      visible={visible}
     >
       <div className="timeline">
         {academicRoles.map((role) => (

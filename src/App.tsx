@@ -13,7 +13,6 @@ const sectionIds = ["about", "publications", "experience"] as const;
 function App() {
   const category = currentArchiveCategory();
   const [activeSection, setActiveSection] = useState<string>("about");
-  const [visibleSections, setVisibleSections] = useState<Set<string>>(() => new Set(["about"]));
   const [menuOpen, setMenuOpen] = useState(false);
   const progressRef = useRef<HTMLSpanElement>(null);
   useEffect(() => {
@@ -32,14 +31,7 @@ function App() {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
 
-          const sectionId = entry.target.id;
-          setActiveSection(sectionId);
-          setVisibleSections((previous) => {
-            if (previous.has(sectionId)) return previous;
-            const next = new Set(previous);
-            next.add(sectionId);
-            return next;
-          });
+          setActiveSection(entry.target.id);
         });
       },
       { rootMargin: "-28% 0px -52% 0px", threshold: 0.08 },
@@ -67,8 +59,6 @@ function App() {
     return () => window.removeEventListener("scroll", updateProgress);
   }, []);
 
-  const isVisible = (id: string) => visibleSections.has(id);
-
   return (
     <>
       <div className="scroll-progress" aria-hidden="true">
@@ -86,11 +76,11 @@ function App() {
       {category ? <PublicationArchivePage category={category} /> : <main id="home" className="page-shell">
         <div className="intro-layout">
           <ProfileSidebar />
-          <AboutSection visible={isVisible("about")} />
+          <AboutSection />
         </div>
         <div className="story-column">
-          <PublicationsSection visible={isVisible("publications")} />
-          <ExperienceSection visible={isVisible("experience")} />
+          <PublicationsSection />
+          <ExperienceSection />
         </div>
       </main>}
 

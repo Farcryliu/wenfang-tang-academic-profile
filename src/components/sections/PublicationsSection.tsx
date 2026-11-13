@@ -5,7 +5,7 @@ import { archiveCategories, archiveHref, type ArchiveCategory } from "../../data
 
 const desktopPreview = "(min-width: 981px)";
 
-export function PublicationsSection({ visible }: { visible: boolean }) {
+export function PublicationsSection() {
   const [openCategory, setOpenCategory] = useState<ArchiveCategory | null>(null);
   const openPanel = useRef<HTMLDivElement>(null);
 
@@ -71,7 +71,6 @@ export function PublicationsSection({ visible }: { visible: boolean }) {
       index="02"
       kicker="Publications"
       title="Publication list"
-      visible={visible}
     >
       <nav className="archive-category-links" aria-label="Publication categories">
         {archiveCategories.map(({ id, label, entries }) => {

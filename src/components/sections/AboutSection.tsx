@@ -1,14 +1,13 @@
 import { profile } from "../../data/profile";
 import { SectionShell } from "../SectionShell";
 
-export function AboutSection({ visible }: { visible: boolean }) {
+export function AboutSection() {
   return (
     <SectionShell
       id="about"
       index="01"
       kicker="Welcome"
       title="Biography"
-      visible={visible}
       className="biography-section"
     >
       <div className="biography-copy">

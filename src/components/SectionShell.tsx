@@ -5,13 +5,12 @@ type SectionShellProps = {
   index: string;
   kicker: string;
   title: string;
-  visible: boolean;
   className?: string;
   children: ReactNode;
 };
 
-export function SectionShell({ id, index, kicker, title, visible, className = "", children }: SectionShellProps) {
-  const classes = ["story-section", className, visible ? "is-visible" : ""].filter(Boolean).join(" ");
+export function SectionShell({ id, index, kicker, title, className = "", children }: SectionShellProps) {
+  const classes = ["story-section", className].filter(Boolean).join(" ");
 
   return (
     <section id={id} className={classes} data-index={index}>

@@ -345,14 +345,6 @@ summary {
   position: relative;
   min-height: 100vh;
   padding: 10vh 0 13vh;
-  opacity: 0.18;
-  transform: translateY(36px);
-  transition: opacity 700ms ease, transform 700ms ease;
-}
-
-.story-section.is-visible {
-  opacity: 1;
-  transform: none;
 }
 
 #publications,
@@ -910,8 +902,6 @@ summary {
   .story-section {
     min-height: auto;
     padding: 110px 0;
-    opacity: 1;
-    transform: none;
   }
 
   .story-section.biography-section {
@@ -1058,11 +1048,6 @@ summary {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
-  }
-
-  .story-section {
-    opacity: 1;
-    transform: none;
   }
 }
 
