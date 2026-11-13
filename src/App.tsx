@@ -24,6 +24,9 @@ function App() {
 
   useEffect(() => {
     if (category) return undefined;
+    const section = window.location.hash.slice(1);
+    if (section) document.getElementById(section)?.scrollIntoView({ behavior: "instant" });
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

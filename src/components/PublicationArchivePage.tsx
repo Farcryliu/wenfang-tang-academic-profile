@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { ArrowUpRightIcon } from "./ArrowIcons";
 import { Citation } from "./Citation";
 import { archiveCategories, archiveHref, fullBooks, fullEditedVolumes, homeHref, type ArchiveCategory, type ArchiveEntry, type ArchiveLink, type BookEntry } from "../data/archive";
@@ -20,7 +21,7 @@ function EntryNotes({ entry }: { entry: ArchiveEntry }) {
 }
 function BookList({ books }: { books: BookEntry[] }) {
   return <ol className="archive-book-list">
-    {books.map((book) => <li key={book.id} className="archive-book-entry">
+    {books.map((book) => <li key={book.id} id={book.id} className="archive-book-entry">
       <a className="archive-book-cover" href={book.amazonUrl} target="_blank" rel="noreferrer"
         aria-label={`${book.amazonSearch ? "Search Amazon for" : "View on Amazon:"} ${book.title}`}>
         <img src={`${import.meta.env.BASE_URL}${book.cover}`} alt={`Cover of ${book.title}`} loading="lazy" />
@@ -43,7 +44,7 @@ function TextArchive({ entries }: { entries: readonly ArchiveEntry[] }) {
     {years.map((year) => <section key={year ?? "undated"} id={`year-${year ?? "undated"}`} className="archive-year-group">
       <h2>{year ?? "Undated"}</h2>
       <ol className="archive-text-list">
-        {entries.filter((entry) => entry.year === year).map((entry) => <li key={entry.id}>
+        {entries.filter((entry) => entry.year === year).map((entry) => <li key={entry.id} id={entry.id}>
           <p className="archive-citation"><Citation segments={entry.citation} /></p>
           <ResourceLinks links={entry.links} />
           <EntryNotes entry={entry} />
@@ -54,6 +55,11 @@ function TextArchive({ entries }: { entries: readonly ArchiveEntry[] }) {
 }
 export function PublicationArchivePage({ category }: { category: ArchiveCategory }) {
   const current = archiveCategories.find((item) => item.id === category)!;
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash) document.getElementById(hash)?.scrollIntoView({ behavior: "instant" });
+  }, [category]);
+
   return <main id="home" className="archive-page">
     <aside className="archive-sidebar">
       <a className="archive-back" href={homeHref("publications")}><span aria-hidden="true">←</span> Publication list</a>

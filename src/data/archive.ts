@@ -6,13 +6,13 @@ export type ArchiveLink = { label: string; href: string };
 export type ArchiveNote = { text: string; links: ArchiveLink[] };
 export type ArchiveEntry = {
   id: string;
+  title: string;
   year: number | null;
   citation: CitationSegment[];
   links: ArchiveLink[];
   notes?: ArchiveNote[];
 };
 export type BookEntry = ArchiveEntry & {
-  title: string;
   cover: string;
   amazonUrl: string;
   amazonSearch: boolean;
