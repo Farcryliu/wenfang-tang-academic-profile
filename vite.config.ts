@@ -3,8 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  // Local development stays at `/`. The Pages workflow supplies the
-  // repository subpath so built assets also work on project pages.
+  // Pages supplies its configured base path. Custom domains use `/`.
   base: process.env.BASE_PATH || "/",
   build: {
     outDir: "dist",
