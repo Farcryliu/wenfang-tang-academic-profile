@@ -23,7 +23,7 @@ export function Header({ activeSection, category, menuOpen, onToggleMenu, onNavi
     return () => document.removeEventListener("pointerdown", dismiss);
   }, []);
 
-  return <header className="site-header">
+  return <header className={category ? "site-header" : "site-header site-header-home"}>
     <a className="wordmark" href={category ? homeHref() : "#home"} aria-label="Wenfang Tang, home" onClick={navigate}>
       <span className="wordmark-en">Wenfang Tang</span><span className="wordmark-cn">唐文方</span>
     </a>

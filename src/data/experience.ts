@@ -59,7 +59,7 @@ export const academicProjects: LeadershipRole[] = [
 export const editorialRoles: LeadershipRole[] = [
   {
     role: "Since June 2025",
-    title: "Field Chief Editor",
+    title: "Field Chief Co-editor",
     organization: "Frontiers in Political Science",
   },
   {

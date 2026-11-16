@@ -26,7 +26,7 @@ The complete directories are separate static pages: `books.html`,
 directly or refreshed on GitHub Pages, including under the repository subpath.
 
 The archive contains 9 books, 5 edited volumes/editions, 55 primary article
-entries (with reprint and alternate-version notes), and 27 op-ed entries
+entries (with reprint and alternate-version notes), and 28 op-ed entries
 (with repost notes).
 Book covers are local assets in `public/assets/covers/`. Covers link to the
 legacy Amazon listings; where no product link was supplied (the Russian edition,

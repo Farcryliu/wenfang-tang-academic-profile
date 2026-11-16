@@ -111,6 +111,21 @@ summary {
   gap: clamp(18px, 2.4vw, 38px);
 }
 
+@media (min-width: 981px) {
+  .site-header-home {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+  }
+
+  .site-header-home .wordmark {
+    justify-self: start;
+  }
+
+  .site-header-home .site-nav {
+    grid-column: 2;
+  }
+}
+
 .site-nav a {
   position: relative;
   color: var(--ink-soft);

@@ -1845,6 +1845,40 @@
   ],
   "blogs": [
     {
+      "id": "op-ed-ai-humanities-2026",
+      "year": 2026,
+      "title": "AI时代人文社科生存与发展的思考",
+      "citation": [
+        {
+          "text": "唐文方. (2026, March 23). AI时代人文社科生存与发展的思考. "
+        },
+        {
+          "text": "深圳特区报",
+          "italic": true
+        },
+        {
+          "text": ", 08版."
+        }
+      ],
+      "links": [
+        {
+          "label": "深圳特区报原文 (PDF)",
+          "href": "./assets/op-eds/ai-humanities-shenzhen-special-zone-daily.pdf"
+        }
+      ],
+      "notes": [
+        {
+          "text": "Reprinted in 文化深圳, 2026年第3期, pp. 77–78.",
+          "links": [
+            {
+              "label": "文化深圳转载 (PDF)",
+              "href": "./assets/op-eds/ai-humanities-cultural-shenzhen.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "blog-0",
       "year": 2024,
       "title": "人工智能与非洲“马杀鸡”",
