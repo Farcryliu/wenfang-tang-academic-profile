@@ -271,7 +271,7 @@ summary {
 
 .profile-identity h1 {
   margin: 0 0 14px;
-  font-size: clamp(1.7rem, 1.9vw, 1.9rem);
+  font-size: calc(clamp(1.7rem, 1.9vw, 1.9rem) * var(--home-title-scale, 1));
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.12;
@@ -401,7 +401,7 @@ summary {
   position: relative;
   max-width: 730px;
   margin: 18px 0 30px;
-  font-size: clamp(1.7rem, 1.9vw, 1.9rem);
+  font-size: calc(clamp(1.7rem, 1.9vw, 1.9rem) * var(--home-section-scale, 1));
   font-weight: 600;
   letter-spacing: -0.025em;
   line-height: 1.12;
@@ -434,7 +434,7 @@ summary {
   padding-top: 22px;
   border-top: 1px solid var(--line);
   color: var(--ink-soft);
-  font-size: 0.95rem;
+  font-size: calc(0.95rem * var(--home-body-scale, 1));
   line-height: 1.72;
 }
 
@@ -961,7 +961,7 @@ summary {
   }
 
   .profile-identity h1 {
-    font-size: clamp(1.2rem, 5.5vw, 1.45rem);
+    font-size: calc(clamp(1.2rem, 5.5vw, 1.45rem) * var(--home-title-scale, 1));
   }
 
   .profile-identity h1 span {
@@ -1004,7 +1004,7 @@ summary {
 
   .biography-copy {
     padding-top: 20px;
-    font-size: 0.925rem;
+    font-size: calc(0.925rem * var(--home-body-scale, 1));
     line-height: 1.75;
   }
 
@@ -1013,7 +1013,7 @@ summary {
   }
 
   .story-section h2 {
-    font-size: 1.65rem;
+    font-size: calc(1.65rem * var(--home-section-scale, 1));
   }
 
   .section-number {
@@ -1236,4 +1236,37 @@ summary {
   .archive-citation { font-size: 0.9rem; padding-left: 1.1rem; text-indent: -1.1rem; }
   .archive-year-group { display: block; padding: 26px 0; }
   .archive-year-group h2 { margin-bottom: 22px; }
+}
+
+.story-column > .biography-section {
+  --biography-top: var(--intro-section-spacing);
+  border-top: 1px solid var(--section-divider);
+}
+
+.intro-layout > #publications,
+.intro-layout > #experience {
+  min-height: 0;
+  padding: 0 0 var(--intro-section-spacing);
+  border-top: 0;
+}
+
+.intro-layout > #publications .section-number,
+.intro-layout > #experience .section-number {
+  top: 0;
+}
+
+.archive-book-entry.archive-book-entry-no-cover {
+  grid-template-columns: 1fr;
+}
+
+@media (max-width: 980px) {
+  .intro-layout > #publications,
+  .intro-layout > #experience {
+    padding-top: var(--intro-section-spacing);
+  }
+
+  .intro-layout > #publications .section-number,
+  .intro-layout > #experience .section-number {
+    top: var(--intro-section-spacing);
+  }
 }

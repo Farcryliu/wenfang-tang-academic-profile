@@ -87,3 +87,52 @@ See the [GitHub Pages custom domain guide](https://docs.github.com/en/pages/conf
   both pointed to `199.34.228.134` before the cutover. Keep the existing mail
   records. Clear the custom domain under **Settings → Pages** and rerun the
   deployment to restore the default GitHub Pages project URL.
+
+## AI editor for Professor Tang
+
+Run `npm run dev:editor` to try the Chinese editing interface on this computer.
+Use the four example buttons to generate changes, compare them in the desktop
+and phone previews, and simulate publication. The demo uses scripted responses
+and resets when the local server stops.
+
+The hosted editor accepts Chinese instructions. It can revise the homepage
+biography, reorder its three sections, adjust the name heading, section
+headings and biography text, or add, edit or remove one publication per
+request. For an addition, paste the citation or bibliographic details and an
+optional HTTPS source link. The editor does not retrieve article metadata from
+a URL. Changes stay in the preview until the teacher clicks 确认发布.
+
+### Set up the hosted editor
+
+1. Put the editor code and the initial `src/data/layout.json` on the website's
+   GitHub `main` branch. Build with `npm run build:editor` and deploy the
+   separate Cloudflare Worker using `npx wrangler deploy`. Use the Worker
+   address for the teacher's bookmark. The public website continues to use
+   GitHub Pages and the regular `npm run build` output.
+2. In the Worker's Access settings, protect its production address with
+   [Cloudflare Access](https://developers.cloudflare.com/workers/configuration/cloudflare-access/).
+   Enable [one-time PIN login](https://developers.cloudflare.com/cloudflare-one/integrations/identity-providers/one-time-pin/)
+   and allow only the approved teacher email addresses. The Worker also checks
+   the Access application's signed identity and the same allowlist.
+3. Add these runtime values to the Worker as secrets. Use the Cloudflare
+   dashboard or run `npx wrangler secret put SECRET_NAME` from this directory.
+   - `ACCESS_TEAM_DOMAIN` is the Access team host ending in
+     `.cloudflareaccess.com`, without `https://` or a trailing slash.
+   - `ACCESS_AUDIENCE` is the production Access application's AUD tag.
+   - `EDITOR_EMAILS` is the comma-separated list of approved addresses.
+   - `OPENAI_API_KEY` is a project key with access to the model in `wrangler.toml`.
+   - `GITHUB_TOKEN` is a fine-grained token scoped to this repository. Grant
+     **Contents: Read and write** and **Actions: Read**. The token's account
+     must be able to commit to `main` under the repository's existing rules.
+   - `EDITOR_SIGNING_SECRET` is a random secret of at least 32 characters.
+     Generate one locally with `openssl rand -hex 32`.
+4. Sign in with an approved email, generate a draft and check both previews.
+   Publish a real, approved update and verify it on the public site. The
+   editor commits the reviewed changes in one GitHub commit and shows the
+   status of the existing Pages deployment for that commit.
+
+When changing the public site's React components or styles, rebuild and redeploy
+the editor too so its previews use the latest templates. Edits to the biography,
+publication archive or layout are loaded directly from GitHub and appear in the
+editor without rebuilding it. To undo a published edit, revert that commit on
+`main` and let the Pages deployment run again.

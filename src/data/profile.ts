@@ -1,5 +1,3 @@
-import { biography } from "./biography.json";
-
 export const profile = {
   name: "Wenfang Tang",
   nameChinese: "唐文方",
@@ -17,8 +15,4 @@ export const profile = {
     street: "2001 Longxiang Blvd., Longgang, Shenzhen, Guangdong, China",
   },
   universityProfile: "https://myweb.cuhk.edu.cn/tangwenfang/Home/Index",
-  biography: biography
-    .split(/\r?\n(?:[ \t]*\r?\n)+/)
-    .map((paragraph) => paragraph.trim())
-    .filter(Boolean),
 };

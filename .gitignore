@@ -8,3 +8,8 @@ node_modules/
 dist/
 npm-debug.log*
 selected publication materials/
+
+/dist-editor/
+/.wrangler/
+.dev.vars*
+.env*

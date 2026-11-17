@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { archiveCategories, archiveHref, homeHref, type ArchiveCategory } from "../data/archive";
+import { getArchiveCategories, archiveHref, homeHref, type ArchiveCategory } from "../data/archive";
+import { useSiteContent } from "../SiteContentContext";
 
 type HeaderProps = {
   activeSection: string;
@@ -10,6 +11,8 @@ type HeaderProps = {
 };
 
 export function Header({ activeSection, category, menuOpen, onToggleMenu, onNavigate }: HeaderProps) {
+  const { archive, layout } = useSiteContent();
+  const archiveCategories = getArchiveCategories(archive);
   const [publicationsOpen, setPublicationsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
@@ -32,8 +35,11 @@ export function Header({ activeSection, category, menuOpen, onToggleMenu, onNavi
       <span /><span /><span /><span className="sr-only">{menuOpen ? "Close navigation" : "Open navigation"}</span>
     </button>
     <nav id="site-nav" className={`site-nav${menuOpen ? " open" : ""}`} aria-label="Main navigation">
-      <a href={category ? homeHref("about") : "#about"} className={!category && activeSection === "about" ? "active" : undefined} onClick={navigate}>About</a>
-      <div className="nav-publications" ref={dropdownRef} onBlur={(event) => {
+      {layout.sectionOrder.map((id) => id !== "publications" ? (
+        <a key={id} href={category ? homeHref(id) : `#${id}`} className={!category && activeSection === id ? "active" : undefined} onClick={navigate}>
+          {id === "about" ? "About" : "Experience"}
+        </a>
+      ) : <div key={id} className="nav-publications" ref={dropdownRef} onBlur={(event) => {
         if (!event.currentTarget.contains(event.relatedTarget as Node)) setPublicationsOpen(false);
       }} onKeyDown={(event) => {
         if (event.key === "Escape") { setPublicationsOpen(false); toggleRef.current?.focus(); }
@@ -50,8 +56,7 @@ export function Header({ activeSection, category, menuOpen, onToggleMenu, onNavi
             <span>{item.label}</span><span>{item.entries.length}</span>
           </a>)}
         </div>
-      </div>
-      <a href={category ? homeHref("experience") : "#experience"} className={!category && activeSection === "experience" ? "active" : undefined} onClick={navigate}>Experience</a>
+      </div>)}
     </nav>
   </header>;
 }

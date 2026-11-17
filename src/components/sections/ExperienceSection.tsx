@@ -22,11 +22,11 @@ function LeadershipList({ items }: { items: LeadershipRole[] }) {
   );
 }
 
-export function ExperienceSection() {
+export function ExperienceSection({ index }: { index: string }) {
   return (
     <SectionShell
       id="experience"
-      index="03"
+      index={index}
       kicker="Experience"
       title="Positions"
     >

@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import { ArrowUpRightIcon } from "./ArrowIcons";
 import { Citation } from "./Citation";
-import { archiveCategories, archiveHref, fullBooks, fullEditedVolumes, homeHref, type ArchiveCategory, type ArchiveEntry, type ArchiveLink, type BookEntry } from "../data/archive";
+import { getArchiveCategories, archiveHref, homeHref, type ArchiveCategory, type ArchiveEntry, type ArchiveLink, type BookEntry } from "../data/archive";
+import { useSiteContent } from "../SiteContentContext";
 
 function ResourceLinks({ links }: { links: ArchiveLink[] }) {
   if (!links.length) return null;
@@ -21,16 +22,16 @@ function EntryNotes({ entry }: { entry: ArchiveEntry }) {
 }
 function BookList({ books }: { books: BookEntry[] }) {
   return <ol className="archive-book-list">
-    {books.map((book) => <li key={book.id} id={book.id} className="archive-book-entry">
-      <a className="archive-book-cover" href={book.amazonUrl} target="_blank" rel="noreferrer"
+    {books.map((book) => <li key={book.id} id={book.id} className={`archive-book-entry${book.cover ? "" : " archive-book-entry-no-cover"}`}>
+      {book.cover && <a className="archive-book-cover" href={book.amazonUrl || undefined} target="_blank" rel="noreferrer"
         aria-label={`${book.amazonSearch ? "Search Amazon for" : "View on Amazon:"} ${book.title}`}>
         <img src={`${import.meta.env.BASE_URL}${book.cover}`} alt={`Cover of ${book.title}`} loading="lazy" />
-      </a>
+      </a>}
       <div className="archive-book-copy">
         <span className="archive-entry-year">{book.year}</span>
         <p className="archive-citation"><Citation segments={book.citation} /></p>
         {book.note ? <p className="archive-book-note">{book.note}</p> : null}
-        <ResourceLinks links={[{ label: book.amazonSearch ? "Search on Amazon" : "View on Amazon", href: book.amazonUrl }, ...book.links]} />
+        <ResourceLinks links={book.amazonUrl ? [{ label: book.amazonSearch ? "Search on Amazon" : "View on Amazon", href: book.amazonUrl }, ...book.links] : book.links} />
       </div>
     </li>)}
   </ol>;
@@ -54,6 +55,8 @@ function TextArchive({ entries }: { entries: readonly ArchiveEntry[] }) {
   </>;
 }
 export function PublicationArchivePage({ category }: { category: ArchiveCategory }) {
+  const { archive } = useSiteContent();
+  const archiveCategories = getArchiveCategories(archive);
   const current = archiveCategories.find((item) => item.id === category)!;
   useEffect(() => {
     const hash = window.location.hash.slice(1);
@@ -77,8 +80,8 @@ export function PublicationArchivePage({ category }: { category: ArchiveCategory
         <h1>{current.label}</h1>
         {category !== "blogs" && <span className="archive-total">{current.entries.length} entries</span>}
       </header>
-      {category === "books" ? <BookList books={fullBooks} />
-        : category === "edited-volumes" ? <BookList books={fullEditedVolumes} />
+      {category === "books" ? <BookList books={archive.books} />
+        : category === "edited-volumes" ? <BookList books={archive.editedVolumes} />
         : <TextArchive entries={current.entries} />}
       <a className="archive-back archive-return" href={homeHref("publications")}><span aria-hidden="true">←</span> Back to Publication list</a>
     </div>

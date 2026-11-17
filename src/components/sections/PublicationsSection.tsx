@@ -1,11 +1,13 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { SectionShell } from "../SectionShell";
 import { ArrowUpRightIcon } from "../ArrowIcons";
-import { archiveCategories, archiveHref, type ArchiveCategory } from "../../data/archive";
+import { getArchiveCategories, archiveHref, type ArchiveCategory } from "../../data/archive";
+import { useSiteContent } from "../../SiteContentContext";
 
 const desktopPreview = "(min-width: 981px)";
 
-export function PublicationsSection() {
+export function PublicationsSection({ index }: { index: string }) {
+  const archiveCategories = getArchiveCategories(useSiteContent().archive);
   const [openCategory, setOpenCategory] = useState<ArchiveCategory | null>(null);
   const openPanel = useRef<HTMLDivElement>(null);
 
@@ -68,7 +70,7 @@ export function PublicationsSection() {
   return (
     <SectionShell
       id="publications"
-      index="02"
+      index={index}
       kicker="Publications"
       title="Publication list"
     >

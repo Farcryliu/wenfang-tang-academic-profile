@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "dev:editor": "vite --mode editor-demo --open /editor.html",
+    "build:editor": "tsc --noEmit && vite build --mode editor",
     "preview": "vite preview",
     "check": "tsc --noEmit"
   },
