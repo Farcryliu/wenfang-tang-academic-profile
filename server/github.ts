@@ -7,6 +7,7 @@ type Settings = { GITHUB_REPOSITORY: string; GITHUB_BRANCH: string; GITHUB_TOKEN
 
 const biographyPath = "src/data/biography.json";
 const archivePath = "src/data/archive.json";
+const experiencePath = "src/data/experience.json";
 const layoutPath = "src/data/layout.json";
 const workflow = "deploy-pages.yml";
 
@@ -52,17 +53,19 @@ export function githubStore(settings: Settings): ContentStore {
     async load() {
       const ref = await github<{ object: { sha: string } }>(repoApi + "/git/ref/heads/" + encodeURIComponent(branch));
       const revision = ref.object.sha;
-      const [{ biography }, archive, layout] = await Promise.all([
+      const [{ biography }, archive, layout, experience] = await Promise.all([
         file<{ biography: string }>(biographyPath, revision),
         file<SiteContent["archive"]>(archivePath, revision),
         file<SiteContent["layout"]>(layoutPath, revision),
+        file<SiteContent["experience"]>(experiencePath, revision),
       ]);
-      return { revision, content: { biography, archive, layout } };
+      return { revision, content: { biography, archive, layout, experience } };
     },
     async publish(current, content) {
       const additions = [];
       if (content.biography !== current.content.biography) additions.push(jsonFile(biographyPath, { biography: content.biography }));
       if (content.archive !== current.content.archive) additions.push(jsonFile(archivePath, content.archive));
+      if (content.experience !== current.content.experience) additions.push(jsonFile(experiencePath, content.experience));
       if (content.layout !== current.content.layout) additions.push(jsonFile(layoutPath, content.layout));
       const response = await github<{
         data?: { createCommitOnBranch?: { commit?: { oid: string } } };

@@ -20,7 +20,7 @@ npm run dev
 - Books, edited volumes, articles, and op-eds: `src/data/archive.json`
 - Archive types, labels, and page links: `src/data/archive.ts`
 - Original website bibliography and link snapshot (retrieved October 11, 2026): `src/data/legacy-publications.json`
-- Positions, academic projects, and editorial roles: `src/data/experience.ts`
+- Positions, academic projects, and editorial roles: `src/data/experience.json`
 
 The homepage includes About, Publication list, and Experience sections.
 The complete directories are separate static pages: `books.html`,

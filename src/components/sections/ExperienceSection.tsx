@@ -1,9 +1,5 @@
-import {
-  academicProjects,
-  academicRoles,
-  editorialRoles,
-  type LeadershipRole,
-} from "../../data/experience";
+import type { LeadershipRole } from "../../data/experience";
+import { useSiteContent } from "../../SiteContentContext";
 import { SectionShell } from "../SectionShell";
 
 function LeadershipList({ items }: { items: LeadershipRole[] }) {
@@ -23,6 +19,7 @@ function LeadershipList({ items }: { items: LeadershipRole[] }) {
 }
 
 export function ExperienceSection({ index }: { index: string }) {
+  const { academicRoles, academicProjects, editorialRoles } = useSiteContent().experience;
   return (
     <SectionShell
       id="experience"
