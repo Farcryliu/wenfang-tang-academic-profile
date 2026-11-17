@@ -136,3 +136,9 @@ the editor too so its previews use the latest templates. Edits to the biography,
 publication archive or layout are loaded directly from GitHub and appear in the
 editor without rebuilding it. To undo a published edit, revert that commit on
 `main` and let the Pages deployment run again.
+
+Published teacher edits are read from the hosted editor's public content feed.
+The editor owns the published overrides for biography and the individual
+publication and experience groups it edits. The repository provides defaults
+for all other groups and during a feed outage. The build exports the public
+baseline as `/editor-base.json` for the editor to read.

@@ -63,7 +63,7 @@ export function PublicationArchivePage({ category }: { category: ArchiveCategory
   useEffect(() => {
     const hash = window.location.hash.slice(1);
     if (hash) document.getElementById(hash)?.scrollIntoView({ behavior: "instant" });
-  }, [category]);
+  }, [category, archive]);
 
   return <main id="home" className="archive-page">
     <aside className="archive-sidebar">
