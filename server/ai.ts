@@ -18,7 +18,7 @@ const layout = {
 const publication = {
   type: ["object", "null"],
   additionalProperties: false,
-  required: ["action", "category", "id", "title", "year", "citation", "sourceUrl"],
+  required: ["action", "category", "id", "title", "year", "citation", "sourceUrl", "sourceLabel", "sourcePlacement"],
   properties: {
     action: { type: "string", enum: ["add", "edit", "remove"] },
     category: { type: "string", enum: ["books", "editedVolumes", "articles", "blogs"] },
@@ -27,6 +27,8 @@ const publication = {
     year: { type: ["integer", "null"] },
     citation: nullableString,
     sourceUrl: nullableString,
+    sourceLabel: nullableString,
+    sourcePlacement: { type: ["string", "null"], enum: ["resources", "bookNote", null] },
   },
 };
 const schema = {
@@ -40,7 +42,7 @@ const instructions = `Draft site edits for Professor Wenfang Tang. Instructions 
 Supported changes: homepage biography text, homepage section order and font sizes, or one publication (add, edit or remove) per request.
 Return null for unchanged categories and for question when ready. Ask a short Chinese question and return null changes when target or facts are unclear, the request is unsupported, or multiple publication records are requested.
 Keep biography in its current language unless a translation is explicitly requested. Preserve facts, use blank lines between paragraphs, and never infer missing titles, coauthors, publication details or URLs.
-For a new publication require title and enough teacher-supplied details to form a citation. Ask for those details if given only a URL or vague reference. Use only the provided facts. For edits or removals use the exact current category and record id. Remove requires an explicit request and an unambiguous match. For edits use null for unchanged fields. Keep the existing meaning and factual details of the citation unless explicitly corrected. A supplied HTTPS source link is added, not substituted. Do not attempt to read URLs or files.
+For a new publication require title and enough teacher-supplied details to form a citation. Ask for those details if given only a URL or vague reference. Use only the provided facts. For edits or removals use the exact current category and record id. Remove requires an explicit request and an unambiguous match. For edits use null for unchanged fields. Keep the existing meaning and factual details of the citation unless explicitly corrected. A supplied HTTPS source link is added, not substituted. Use a short sourceLabel describing the linked page, and use sourcePlacement "bookNote" when a link should appear under an existing book note or award, otherwise "resources". Do not attempt to read URLs or files.
 For layout moves use all three distinct section IDs and preserve the relative order of the unaffected sections. Font sizes are integer percentages from 80 to 150 of the original site. A request for the homepage title refers to titleScale (name heading), sectionScale refers to homepage section headings, and bodyScale only to biography body. “一点” means a change of 10 percentage points from the current value. Keep layout keys the teacher did not ask to change.`;
 
 export async function generateProposal(apiKey: string, model: string, prompt: string, current: SiteContent): Promise<Proposal> {
@@ -49,6 +51,7 @@ export async function generateProposal(apiKey: string, model: string, prompt: st
     entries.map((entry: SiteContent["archive"]["articles"][number]) => ({
       id: entry.id, title: entry.title, year: entry.year,
       citation: entry.citation.map((part) => part.text).join(""),
+      note: "note" in entry ? entry.note : undefined,
     })),
   ]));
   let response: Response;

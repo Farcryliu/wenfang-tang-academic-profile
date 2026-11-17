@@ -63,7 +63,13 @@
       "amazonUrl": "https://www.amazon.com/dp/0190205792",
       "amazonSearch": false,
       "links": [],
-      "note": "Winner of the CHOICE Best Academic Title Award"
+      "note": "Winner of the CHOICE Best Academic Title Award",
+      "noteLinks": [
+        {
+          "label": "Wikipedia overview",
+          "href": "https://en.wikipedia.org/wiki/Populist_Authoritarianism"
+        }
+      ]
     },
     {
       "id": "separate-but-loyal",

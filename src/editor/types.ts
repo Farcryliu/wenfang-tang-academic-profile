@@ -11,6 +11,8 @@ export type PublicationChange = {
   year: number | null;
   citation: string | null;
   sourceUrl: string | null;
+  sourceLabel?: string | null;
+  sourcePlacement?: "resources" | "bookNote" | null;
 };
 
 export type EditChanges = {

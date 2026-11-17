@@ -1198,6 +1198,7 @@ summary {
 }
 .archive-resource-links a { display: inline-flex; align-items: center; gap: 6px; }
 .archive-resource-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.archive-book-note-links { margin-top: 5px; }
 .archive-year-index { display: flex; flex-wrap: wrap; gap: 10px 18px; padding: 25px 0; border-bottom: 1px solid var(--line); }
 .archive-year-index a { color: var(--ink-soft); font-size: 0.76rem; }
 .archive-year-index a:hover { color: var(--blue); text-decoration: underline; text-underline-offset: 4px; }

@@ -4,9 +4,10 @@ import { Citation } from "./Citation";
 import { getArchiveCategories, archiveHref, homeHref, type ArchiveCategory, type ArchiveEntry, type ArchiveLink, type BookEntry } from "../data/archive";
 import { useSiteContent } from "../SiteContentContext";
 
-function ResourceLinks({ links }: { links: ArchiveLink[] }) {
+function ResourceLinks({ links, belowBookNote = false }: { links: ArchiveLink[]; belowBookNote?: boolean }) {
   if (!links.length) return null;
-  return <ul className="archive-resource-links" aria-label="Publication links">
+  return <ul className={belowBookNote ? "archive-resource-links archive-book-note-links" : "archive-resource-links"}
+    aria-label={belowBookNote ? "Book note links" : "Publication links"}>
     {links.map(({ label, href }) => <li key={href}>
       <a href={href} target="_blank" rel="noreferrer">{label}<ArrowUpRightIcon /></a>
     </li>)}
@@ -31,6 +32,7 @@ function BookList({ books }: { books: BookEntry[] }) {
         <span className="archive-entry-year">{book.year}</span>
         <p className="archive-citation"><Citation segments={book.citation} /></p>
         {book.note ? <p className="archive-book-note">{book.note}</p> : null}
+        {book.noteLinks && <ResourceLinks links={book.noteLinks} belowBookNote />}
         <ResourceLinks links={book.amazonUrl ? [{ label: book.amazonSearch ? "Search on Amazon" : "View on Amazon", href: book.amazonUrl }, ...book.links] : book.links} />
       </div>
     </li>)}

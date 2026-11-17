@@ -15,6 +15,7 @@ export type BookEntry = ArchiveEntry & {
   amazonUrl: string;
   amazonSearch: boolean;
   note?: string;
+  noteLinks?: ArchiveLink[];
 };
 export type ArchiveData = {
   books: BookEntry[];

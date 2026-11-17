@@ -95,9 +95,20 @@ function updatePublication(archive: ArchiveData, change: PublicationChange) {
   }
 
   const links = [...(previous?.links ?? [])];
+  const isBook = change.category === "books" || change.category === "editedVolumes";
+  const book = isBook ? previous as BookEntry | undefined : undefined;
+  const noteLinks = [...(book?.noteLinks ?? [])];
   if (change.sourceUrl) {
     const href = safeSource(change.sourceUrl);
-    if (!links.some((link) => link.href === href)) links.push({ label: "Publisher / DOI", href });
+    const belowNote = change.sourcePlacement === "bookNote";
+    if (belowNote && !book?.note) throw new EditorError(422, "这本书需要先有书目说明，才能在下方添加链接。");
+    if (change.sourceLabel != null && !checkText(change.sourceLabel, 80)) {
+      throw new EditorError(422, "链接名称需要为 1 到 80 字。");
+    }
+    const destination = belowNote ? noteLinks : links;
+    if (!destination.some((link) => link.href === href)) {
+      destination.push({ label: change.sourceLabel?.trim() ?? "Publisher / DOI", href });
+    }
   }
   const publication: ArchiveEntry = {
     ...previous,
@@ -106,12 +117,12 @@ function updatePublication(archive: ArchiveData, change: PublicationChange) {
     title,
     citation: change.citation ? [{ text: change.citation.trim() }] : previous!.citation,
     links,
+    ...(noteLinks.length ? { noteLinks } : {}),
   };
   if (previous && JSON.stringify(previous) === JSON.stringify(publication)) {
     throw new EditorError(422, "这一条出版物与现有内容相同，请补充要修改的地方。");
   }
 
-  const isBook = change.category === "books" || change.category === "editedVolumes";
   const entry = isBook && !previous
     ? { ...publication, cover: "", amazonUrl: "", amazonSearch: false } satisfies BookEntry
     : publication;
