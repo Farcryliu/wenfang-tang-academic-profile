@@ -25,7 +25,8 @@ if (isEditorPreview()) {
   }
 
   showSite(defaultSiteContent);
-  const publishedContentUrl = "https://wenfang-tang-editor-trial.harveyliu2333.chatgpt.site/content.json";
+  const publishedContentUrl = import.meta.env.VITE_PUBLISHED_CONTENT_URL
+    || "https://wenfang-tang-editor-trial.harveyliu2333.chatgpt.site/content.json";
   void fetch(publishedContentUrl, {
     cache: "no-store",
     credentials: "omit",

@@ -38,6 +38,7 @@ jobs:
       - name: Build website
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path || '/' }}
+          VITE_PUBLISHED_CONTENT_URL: ${{ vars.VITE_PUBLISHED_CONTENT_URL }}
         run: npm run build
 
       - name: Upload website artifact
